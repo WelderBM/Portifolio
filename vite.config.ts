@@ -8,5 +8,5 @@ export default defineConfig({
     react(),
     svgr(),
   ],
-  base: 'https://github.com/WelderBM/Portifolio'
+  base: '/Portifolio/'
 })
