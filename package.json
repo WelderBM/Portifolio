@@ -2,19 +2,22 @@
   "name": "portifolio",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://github.com/WelderBM/Portifolio/",
+  "homepage": "https://github.com/WelderBM/Portifolio",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "@emotion/react": "^11.13.3",
     "@emotion/styled": "^11.13.0",
     "@fontsource/roboto": "^5.1.0",
     "@mui/material": "^6.1.2",
+    "gh-pages": "^6.1.1",
     "i18next": "^23.15.2",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
