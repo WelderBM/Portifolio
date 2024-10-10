@@ -1,0 +1,57 @@
+{
+  "header": {
+    "start": "Start",
+    "about": "About",
+    "projects": "Projects",
+    "contacts": "Contacts",
+    "download_cv": "Download CV"
+  },
+  "texts": {
+    "hello_visitor": "Hello, visitor!",
+    "my_name": "My name is Welder",
+    "job_title": "Front-end Developer"
+  },
+  "about": {
+    "image_alt": "image of a cartoon programmer",
+    "title": "About",
+    "description_1": "Hello! My name is Welder and I'm a Front-end Developer with 2 years of experience specializing in creating fast and fluid visual interfaces. I focus on impactful solutions using:",
+    "description_2": "Experience in code review, legacy updates, and applying Clean Code. Agile with Scrum.",
+    "download_cv": "Download CV"
+  },
+  "projects": {
+    "title": "Projects",
+    "description": "Here, you will learn about the projects I have participated in. By clicking on the cards, you will see a modal with more details about each amazing project!",
+    "instagram_app": {
+      "title": "Instagram App",
+      "description": "Instagram project with the ability to switch between dark and light themes, as well as an app that consumes a photo API."
+    },
+    "burger_app": {
+      "title": "Burger App",
+      "description": "App to place burger orders, with two screens and transitions between them, as well as the ability to delete orders."
+    },
+    "weather_forecast": {
+      "title": "Weather Forecast",
+      "description": "A website that consumes a weather API by city and shows current weather information and forecasts for the next 5 days."
+    },
+    "login_fotografia": {
+      "title": "Login with Photography theme",
+      "description": "Project made for a job application, which helped me land my first job."
+    },
+    "login_dark": {
+      "title": "Login with Dark theme",
+      "description": "A simple and refined login screen made with HTML and CSS."
+    },
+    "landing_halloween": {
+      "title": "Landing Page with Halloween theme",
+      "description": "Project to test my skills with animation and responsiveness."
+    },
+    "login_black_white": {
+      "title": "Black and White Login Page",
+      "description": "Site with simple transition animation and button links."
+    },
+    "landing_padaria": {
+      "title": "Bakery Landing Page",
+      "description": "Website made to practice my styling skills, with email sending API implementation."
+    }
+  }
+}

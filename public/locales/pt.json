@@ -1,0 +1,57 @@
+{
+  "header": {
+    "start": "Início",
+    "about": "Sobre",
+    "projects": "Projetos",
+    "contacts": "Contatos",
+    "download_cv": "Baixar CV"
+  },
+  "texts": {
+    "hello_visitor": "Olá, visitante!",
+    "my_name": "Meu nome é Welder",
+    "job_title": "Desenvolvedor Front-end"
+  },
+  "about": {
+    "image_alt": "imagem de um programador em cartoon",
+    "title": "Sobre",
+    "description_1": "Olá! Me chamo Welder e sou Desenvolvedor Front-end com 2 anos de experiência, especializado em criar interfaces visuais rápidas e fluídas. Concentro-me em soluções impactantes usando:",
+    "description_2": "Experiência em revisão de código, atualização de legados e aplicação de Clean Code. Ágil com Scrum.",
+    "download_cv": "Baixar CV"
+  },
+  "projects": {
+    "title": "Projetos",
+    "description": "Aqui, você vai saber sobre os projetos que já participei. Ao clicar sobre os cards, você verá um modal com mais explicações sobre cada projeto incrível!",
+    "instagram_app": {
+      "title": "Instagram App",
+      "description": "Projeto de Instagram com a possibilidade de troca do tema dark e light, além de ser um aplicativo que faz consumo de API de fotos."
+    },
+    "burger_app": {
+      "title": "Burger App",
+      "description": "App para fazer pedidos de lanches, com duas telas e transição entre elas, além de poder apagar os pedidos."
+    },
+    "weather_forecast": {
+      "title": "Weather Forecast",
+      "description": "Site que consome uma API de clima por cidade e mostra informações do tempo atual e dos próximos 5 dias."
+    },
+    "login_fotografia": {
+      "title": "Login com tema de Fotografia",
+      "description": "Projeto realizado para uma vaga de emprego, que me ajudou a conseguir minha primeira vaga."
+    },
+    "login_dark": {
+      "title": "Login com tema Dark",
+      "description": "Tela de login simples e caprichada, feita com HTML e CSS."
+    },
+    "landing_halloween": {
+      "title": "Landing Page com tema Halloween",
+      "description": "Projeto para testar minhas habilidades com animação e responsividade."
+    },
+    "login_black_white": {
+      "title": "Página de login preto e branco",
+      "description": "Site com animação de transição simples e links nos botões."
+    },
+    "landing_padaria": {
+      "title": "Landing page de uma padaria",
+      "description": "Site para praticar minhas habilidades de estilo, com implementação de API de envio de e-mail."
+    }
+  }
+}

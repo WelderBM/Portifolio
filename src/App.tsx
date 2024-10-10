@@ -1,0 +1,54 @@
+import { useState } from 'react'
+import './App.css'
+
+import { ThemeProvider } from 'styled-components'
+import { GlobalStyle } from './GlobalStyles'
+import { darkTheme, lightTheme } from './theme'
+
+
+import { Background, Content, Main, BackgroundGeometric, BackgroundBack } from './styles'
+
+import Header from './components/Header/Header';
+import Texts from './components/Texts/Texts';
+import ContactIcons from './components/ContactIcons/ContactIcons';
+import ScrollableComponent from './components/ScrollableComponent/ScrollableComponent';
+import About from './components/About/About';
+import ProjectsCads from './components/ProjectsCads/ProjectsCads';
+import WhatsAppPopup from './components/WhatsAppPopup/WhatsAppPopup';
+import Footer from './components/Footer/Footer';
+
+function App() {
+
+  const [theme, setTheme] = useState("dark")
+  
+  const themeToggler = () => {
+     return theme === "light" ? setTheme('dark') : setTheme('light')
+  }
+
+  return (
+    <ThemeProvider theme={theme === 'light' ? lightTheme : darkTheme }>
+      <GlobalStyle theme={theme === 'light' ? lightTheme : darkTheme }/>
+        <WhatsAppPopup  />
+        <Background id='inicio'>
+          <Content>
+            <Header themeToggler={themeToggler}/>
+            <Main>
+              <Texts/>
+              <ContactIcons theme={theme} />
+            </Main>
+            <ScrollableComponent />
+          </Content>
+        </Background>
+        <BackgroundGeometric id='sobre'>
+          <About />
+        </BackgroundGeometric>
+        <BackgroundBack id='projetos'>
+          <ProjectsCads />
+        </BackgroundBack>
+        <Footer id='contatos' theme={theme} />
+    </ThemeProvider>
+   
+  )
+}
+
+export default App
