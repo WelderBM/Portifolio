@@ -25,18 +25,18 @@ const ToggleFlags: React.FC = () => {
     <DropdownContainer>
       <CircleButton onClick={toggleDropdown}>
         {selectedFlag === 'EN' ? (
-          <img src="/public/euaFlag.png" alt="EN" style={{ width: '20px' }} />
+          <img src="/euaFlag.png" alt="EN" style={{ width: '20px' }} />
         ) : (
-          <img src="/public/brasilFlag.png" alt="BR" style={{ width: '20px' }} />
+          <img src="/brasilFlag.png" alt="BR" style={{ width: '20px' }} />
         )}
       </CircleButton>
       {isDropdownOpen && (
         <Dropdown>
           <DropdownItem onClick={() => changeLanguage('pt')}>
-            <img src="/public/brasilFlag.png" alt="BR" style={{ width: '20px', marginRight: '8px' }} /> PT
+            <img src="/brasilFlag.png" alt="BR" style={{ width: '20px', marginRight: '8px' }} /> PT
           </DropdownItem>
           <DropdownItem onClick={() => changeLanguage('en')}>
-            <img src="/public/euaFlag.png" alt="EN" style={{ width: '20px', marginRight: '8px' }} /> EN
+            <img src="/euaFlag.png" alt="EN" style={{ width: '20px', marginRight: '8px' }} /> EN
           </DropdownItem>
         </Dropdown>
       )}
