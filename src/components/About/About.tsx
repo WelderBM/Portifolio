@@ -1,6 +1,6 @@
 import { About, Image, Content, Title, Description } from './About.styles'; 
 import IconsSlider from '../IconsSlider/IconsSlider';
-import programmer from '../../../programmer.png';
+import programmer from '/programmer.png';
 import ButtonLink from '../DownloadCv/DownloadCv';
 import { useTranslation } from 'react-i18next';
 
