@@ -2,7 +2,7 @@
   "name": "portifolio",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://github.com/WelderBM/Portifolio",
+  "homepage": "https://welderbarroso.netlify.com",
   "type": "module",
   "scripts": {
     "dev": "vite",
