@@ -15,7 +15,7 @@ export const MyName = styled.p`
   font-size: 4rem;
   font-weight: 600;
   margin-bottom: 10px;
-  font-family: 'Montserrat';
+  font-family: 'Roboto';
 `
 
 export const Paragraph = styled.p`

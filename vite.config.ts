@@ -6,6 +6,7 @@ import svgr from 'vite-plugin-svgr';
 export default defineConfig({
   plugins: [
     react(),
-    svgr()
+    svgr(),
   ],
+  base: 'https://github.com/WelderBM/Portifolio'
 })
