@@ -58,7 +58,7 @@ export const BackgroundGeometric = styled.div`
   align-items: center;
   position: relative;
 
-  background-image: url('/src/assets/backgroundGeometric.png');
+  background-image: url('/public/backgroundGeometric.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
