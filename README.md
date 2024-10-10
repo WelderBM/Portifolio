@@ -1,6 +1,6 @@
 <h1 align="center">Meu Portifolio</h1>
 <img src="./capa.jpg"/>
-<h2 align="center"><a href="https://master--ubiquitous-tapioca-4da5cb.netlify.app/">View site</a></h2>
+<h2 align="center"><a href="https://welderbm.github.io/Portifolio/">View site</a></h2>
 
 ## Index
 
