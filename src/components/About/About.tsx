@@ -15,7 +15,7 @@ const ContactIcons = () => {
         <Description>{t('about.description_1')}</Description>
         <IconsSlider />
         <Description>{t('about.description_2')}</Description>
-        <ButtonLink href="/src/assets/Profile.pdf">{t('about.download_cv')}</ButtonLink>
+        <ButtonLink href="/Profile.pdf">{t('about.download_cv')}</ButtonLink>
       </Content>
     </About>
   );

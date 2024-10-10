@@ -45,7 +45,7 @@ const HeaderComponent: React.FC<HeaderComponentProps> = ({ themeToggler }) => {
             <li><a href="#projetos">{t('header.projects')}</a></li>
             <li><a href="#contatos">{t('header.contacts')}</a></li>
             <li>|</li>
-            <DownloadCv href="/src/assets/Profile.pdf">{t('header.download_cv')}</DownloadCv>
+            <DownloadCv href="/Profile.pdf">{t('header.download_cv')}</DownloadCv>
             <ToggleFlags />
             <ThemeSwitcher onClick={themeToggler} />
           </ul>
