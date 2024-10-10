@@ -99,7 +99,7 @@ const ProjectsCads: React.FC = () => {
       ],
     },
     {
-      imageSrc: "/publicbakery.png",
+      imageSrc: "/public/bakery.png",
       title: t('projects.landing_padaria.title'),
       description: t('projects.landing_padaria.description'),
       buttonNames: ["HTML", "CSS", "JavaScript"],

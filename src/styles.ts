@@ -9,7 +9,7 @@ export const Background = styled.div`
   justify-content: center;
   align-items: center;
 
-  background-image: url('/src/assets/background.jpg');
+  background-image: url('/public/background.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -23,7 +23,7 @@ export const Background = styled.div`
     right: 0;
     bottom: 0;
     background-color: ${props => props.theme.body}; 
-    opacity: 0.4; 
+    opacity: 0.6; 
     z-index: 1; 
   }
 `;
