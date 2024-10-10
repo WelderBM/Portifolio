@@ -1,50 +1,52 @@
-# React + TypeScript + Vite
+<h1 align="center">Meu Portifolio</h1>
+<img src="./capa.jpg"/>
+<h2 align="center"><a href="https://welderbm.github.io/Portifolio/">View site</a></h2>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Index
 
-Currently, two official plugins are available:
+- <a href="#funcionalidades-do-projeto">project features</a>
+- <a href="#como-rodar">How to run this project</a>
+- <a href="#tecnologias-ultilizadas">Technologies used</a>
+- <a href="#pessoas-autoras">Authors</a>
+- <a href="#proximos-passos">Next steps</a>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+<h2 id="funcionalidades-do-projeto">Features</h2>
 
-## Expanding the ESLint configuration
+- [x] dark and white theme, and their transitions
+- [x] show and hide images
+- [x] GET from photo API
+<br>
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+<h2 id="como-rodar">How to run the project</h2>
 
-- Configure the top-level `parserOptions` property like this:
+``` bash
+    # Clone this repository
+    $ git clone linkrepo
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+    # Access the project folder in your terminal
+    $ cd instagram-app
+
+    # Install the dependencies
+    $ npm install
+    # or
+    $ yarn
+
+    # Run the application
+    $ npm run dev
+    # or
+    $ yarn dev
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+<h2 id="tecnologias-ultilizadas">Technologies used</h2> 
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+1. [React](https://react.dev/)
+1. [Vite](https://vitejs.dev/)
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+<h2 id="pessoas-autoras">Authors</h2> 
+<img alt="my profile picture" src="./perfil-quadrado.JPG" width="200"/>
+welder barroso
+
+<h2 id="proximos-passos">Next steps</h2> 
+
+- [ ] implement like feature that can be changed by the user
+- [ ] implement search
