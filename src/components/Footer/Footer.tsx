@@ -5,7 +5,12 @@ import { FaGithub } from 'react-icons/fa';
 import { FaLinkedin } from 'react-icons/fa';
 import { IoLogoWhatsapp } from 'react-icons/io';
 
-const Footer = ({ theme, id }) => {
+interface FooterProps {
+  theme: string;
+  id: string;
+}
+
+const Footer: React.FC<FooterProps> = ({ theme, id }) => {
   return (
     <FooterContainer id={id}>
       <Row>

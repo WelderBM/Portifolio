@@ -5,19 +5,26 @@ import ToggleFlags from '../ToggleFlags/ToggleFlags';
 import { Header, Nav } from './Header.styles';
 import { useTranslation } from 'react-i18next';
 
-const HeaderComponent = ({ themeToggler }) => {
-  const { t } = useTranslation();
-  const [scrolled, setScrolled] = useState(false);
+// Definindo a interface para o componente
+interface HeaderComponentProps {
+  themeToggler: () => void; // Definindo o tipo da função themeToggler
+}
 
+const HeaderComponent: React.FC<HeaderComponentProps> = ({ themeToggler }) => {
+  const { t } = useTranslation();
+  const [scrolled, setScrolled] = useState<boolean>(false); // Tipagem explícita para o estado scrolled
+
+  // Função para lidar com o scroll
   const handleScroll = () => {
     const scrollPosition = window.scrollY;
-    if (scrollPosition > 50) { // Quando o scroll passar 50px
+    if (scrollPosition > 50) {
       setScrolled(true);
     } else {
       setScrolled(false);
     }
   };
 
+  // useEffect para adicionar/remover o evento de scroll
   useEffect(() => {
     window.addEventListener('scroll', handleScroll);
 
@@ -28,7 +35,7 @@ const HeaderComponent = ({ themeToggler }) => {
 
   return (
     <>
-      <div id='inicio'></div>
+      <div id="inicio"></div>
       <Header className={scrolled ? 'scrolled' : ''}> {/* Adiciona a classe 'scrolled' */}
         <h2>WELDER<span>&lt;BARROSO/&gt;</span></h2>
         <Nav>
