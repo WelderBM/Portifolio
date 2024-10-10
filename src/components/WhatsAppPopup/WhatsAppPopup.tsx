@@ -41,7 +41,7 @@ const WhatsAppPopup: React.FC = () => {
         <IoLogoWhatsapp size={40} /> {/* Aumentei o tamanho do ícone para maior destaque */}
       </WhatsAppButton>
       <ScrollUpButton className={showScrollButton ? 'show' : ''} onClick={scrollToTop}>
-        <a href="inicio">
+        <a href="#inicio">
           <FaArrowUp size={20} color="white" />
         </a>
       </ScrollUpButton>
