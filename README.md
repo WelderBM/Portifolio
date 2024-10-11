@@ -1,11 +1,8 @@
 <h1 align="center">Meu Portifolio</h1>
 
-<video width="100%" autoplay muted loop>
-    <source src="./videoPortifolio.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-</video>
+<img src="./gifPortifolio.gif" width="100%" alt="Portfolio GIF"/>
 
-<h2 align="center"><a href="https://welderbm.github.io/Portifolio/">View site</a></h2>
+<h2 align="center"><a href="https://welderbarroso.netlify.app/">View site</a></h2>
 
 ## Index
 
