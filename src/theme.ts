@@ -8,6 +8,6 @@ export const darkTheme = {
 export const lightTheme = {
   body: '#e6e6e680',
   fontColor: '#1f1f1f',
-  backgroundColor: '#e6e6e6',
+  backgroundColor: '#cccccc',
   neutralColor: '#5e5e5e'
 };

@@ -54,6 +54,7 @@ export const CarouselContent = styled.div`
   flex-wrap: nowrap;
   justify-content: center;
   gap: 20px;
+  padding-bottom: 40px;
 `;
 
 export const CardWrapper = styled.div`

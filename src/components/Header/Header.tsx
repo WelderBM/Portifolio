@@ -21,7 +21,19 @@ const HeaderComponent: React.FC<HeaderComponentProps> = ({ themeToggler }) => {
     setScrolled(scrollPosition > 50);
   };
 
+  const handleResize = () => {
+    const isNowDesktop = window.innerWidth > 810;
+    setIsDesktop(isNowDesktop);
+
+    if (isNowDesktop) {
+      setMenuOpen(false);
+      setAdditionalMenuOpen(false);
+    }
+  };
+
+  // Atualize o estado inicial de `menuOpen` e `isDesktop`
   useEffect(() => {
+    handleResize(); // Verifique o tamanho da tela assim que o componente é montado
     window.addEventListener('scroll', handleScroll);
     window.addEventListener('resize', handleResize);
 
@@ -30,16 +42,6 @@ const HeaderComponent: React.FC<HeaderComponentProps> = ({ themeToggler }) => {
       window.removeEventListener('resize', handleResize);
     };
   }, []);
-
-  const handleResize = () => {
-    const isNowDesktop = window.innerWidth > 810;
-    setIsDesktop(isNowDesktop);
-    
-    if (isNowDesktop) {
-      setMenuOpen(false);
-      setAdditionalMenuOpen(false);
-    }
-  };
 
   const toggleMenu = () => {
     setMenuOpen(prev => !prev);
@@ -61,15 +63,12 @@ const HeaderComponent: React.FC<HeaderComponentProps> = ({ themeToggler }) => {
         
         {!isDesktop ? (
           <Nav>
-            {window.innerWidth <= 810 && (
               <HamburgerIcon onClick={toggleMenu} className={menuOpen ? 'open' : 'closed'}>
                 <span></span>
                 <span></span>
                 <span></span>
               </HamburgerIcon>
-            )}
-
-            <PlusIcon onClick={toggleAdditionalMenu} className={additionalMenuOpen ? 'open' : 'closed'} >+</PlusIcon>
+              <PlusIcon onClick={toggleAdditionalMenu} className={additionalMenuOpen ? 'open' : 'closed'} >+</PlusIcon>
 
             <ul className={menuOpen ? 'open' : ''}>
               <li><a href="#inicio">{t('header.start')}</a></li>

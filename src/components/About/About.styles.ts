@@ -9,13 +9,15 @@ export const About = styled.div`
   height: min-content;
   width: 80%;
   max-width: 1200px;
-  padding: 20px;
-  background-color: rgba(255, 255, 255, 0.3);
-  backdrop-filter: blur(10px);
+  padding: 40px;
+  background: linear-gradient(90deg, ${(props) => props.theme.body}, ${(props) => props.theme.backgroundColor});
   border-radius: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.5);
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
   margin: 80px auto;
+
+  @media (max-width: 810px) {
+    background: linear-gradient(180deg, ${(props) => props.theme.body}, ${(props) => props.theme.backgroundColor});
+  }
 
   @media (min-width: 810px) {
     flex-direction: row;
@@ -29,6 +31,7 @@ export const Image = styled.img`
   max-width: 400px;
   height: auto;
   margin-bottom: 20px;
+  border-radius: 10px; 
 `;
 
 export const Content = styled.div`
@@ -46,7 +49,7 @@ export const Content = styled.div`
 export const Title = styled.h3`
   color: #f97c22;
   font-size: 4.3rem;
-  line-height: 1;
+  line-height: 1.1; 
   font-family: "Rowdies", sans-serif;
 
   @media (max-width: 810px) {

@@ -1,23 +1,24 @@
 import styled from 'styled-components';
 
 export const CardContainer = styled.div`
-  background-color: ${props => props.theme.backgroundColor};
+  background: linear-gradient(135deg, ${props => props.theme.body}, ${props => props.theme.backgroundColor}); /* Linear gradient em 135 graus com duas cores */
   border-radius: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
   width: 300px;
-  height: 560px;
+  height: 500px;
   text-align: center;
   margin: 20px;
   position: relative;
   z-index: 1;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+
+  /* Sombra contínua estilo Apple */
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15), /* Sombra difusa */
+              0 10px 10px rgba(0, 0, 0, 0.07); /* Sombra secundária */
+  transition: transform 0.3s ease; /* Somente transição para a escala */
 
   &:hover {
-    transform: scale(1.05);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05); /* Mantém o efeito de zoom ao passar o mouse */
   }
-
 `;
 
 export const Image = styled.img`
@@ -32,6 +33,7 @@ export const Image = styled.img`
 
 export const ButtonContainer = styled.div`
   padding-top: 20px;
+  height: 80px;
 `;
 
 export const Button = styled.button<{ color: string }>`
@@ -55,10 +57,6 @@ export const Title = styled.h3`
   padding: 10px;
   transition: color 0.3s, text-shadow 0.3s;
 
-  ${CardContainer}:hover & {
-    color: #f97c22; /* Exemplo de cor no hover */
-  }
-
   @media (max-width: 768px) {
     font-size: 1.4rem; /* Ajusta o tamanho da fonte em telas menores */
   }
@@ -72,14 +70,6 @@ export const Description = styled.p`
   transition: filter 0.3s;
   max-width: 350px;
   margin: 0 auto;
-
-  &:hover {
-    filter: none;
-  }
-
-  ${CardContainer}:hover & {
-    color: #f97c22;
-  }
 
   @media (max-width: 768px) {
     font-size: 1rem; /* Ajusta o tamanho da fonte em telas menores */

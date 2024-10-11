@@ -69,7 +69,7 @@ export const Nav = styled.nav`
       display: flex;
     }
 
-    @media (min-width: 810px) {
+    @media (min-width: 811px) {
       opacity: 1;
       transform: translateY(0);
       display: flex;
@@ -160,7 +160,7 @@ export const HamburgerIcon = styled.div`
     transform: rotate(-45deg) translate(6px, -6px);
   }
 
-  @media (min-width: 810px) {
+  @media (min-width: 811px) {
     display: none;
   }
 `;
