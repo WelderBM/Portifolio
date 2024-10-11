@@ -1,5 +1,10 @@
 <h1 align="center">Meu Portifolio</h1>
-<img src="./capa.jpg"/>
+
+<video width="100%" controls>
+    <source src="./videoPortifolio.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+</video>
+
 <h2 align="center"><a href="https://welderbm.github.io/Portifolio/">View site</a></h2>
 
 ## Index
@@ -19,7 +24,7 @@
 
 <h2 id="como-rodar">How to run the project</h2>
 
-``` bash
+```bash
     # Clone this repository
     $ git clone linkrepo
 
@@ -35,18 +40,3 @@
     $ npm run dev
     # or
     $ yarn dev
-```
-
-<h2 id="tecnologias-ultilizadas">Technologies used</h2> 
-
-1. [React](https://react.dev/)
-1. [Vite](https://vitejs.dev/)
-
-<h2 id="pessoas-autoras">Authors</h2> 
-<img alt="my profile picture" src="./perfil-quadrado.JPG" width="200"/>
-welder barroso
-
-<h2 id="proximos-passos">Next steps</h2> 
-
-- [ ] implement like feature that can be changed by the user
-- [ ] implement search
