@@ -8,6 +8,7 @@ export const HiPhrase = styled.p`
   font-weight: 600;
   font-size: 1.8rem;
   font-family: 'Montserrat', sans-serif;
+  text-align: center;
 
   @media (max-width: 810px) {
     font-size: 1.5rem;
@@ -33,6 +34,7 @@ export const Paragraph = styled.p`
   font-weight: 600;
   margin-bottom: 30px;
   font-family: 'Montserrat', sans-serif;
+  text-align: center;
 
   @media (max-width: 810px) {
     font-size: 1.2rem;

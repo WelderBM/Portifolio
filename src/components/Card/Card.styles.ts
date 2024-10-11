@@ -18,10 +18,6 @@ export const CardContainer = styled.div`
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   }
 
-  @media (max-width: 768px) {
-    width: 90%; /* Ajusta a largura para telas menores */
-    height: auto; /* Permite que a altura se ajuste conforme o conteúdo */
-  }
 `;
 
 export const Image = styled.img`
@@ -30,7 +26,7 @@ export const Image = styled.img`
   object-fit: cover;
 
   @media (max-width: 768px) {
-    height: 150px; /* Ajusta a altura da imagem em telas menores */
+    height: auto; /* Ajusta a altura da imagem em telas menores */
   }
 `;
 
