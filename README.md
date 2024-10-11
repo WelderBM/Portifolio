@@ -26,7 +26,7 @@
     $ git clone linkrepo
 
     # Access the project folder in your terminal
-    $ cd instagram-app
+    $ cd Portifolio
 
     # Install the dependencies
     $ npm install
