@@ -23,7 +23,7 @@ export const Background = styled.div`
     right: 0;
     bottom: 0;
     background-color: ${props => props.theme.body}; 
-    opacity: 0.6; 
+    opacity: 0.9; 
     z-index: 1; 
   }
 `;

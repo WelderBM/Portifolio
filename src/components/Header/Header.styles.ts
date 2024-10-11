@@ -55,7 +55,6 @@ export const Nav = styled.nav`
     color: ${(props) => props.theme.fontColor};
     display: flex;
     align-items: center;
-    gap: 10px;
     font-family: 'Montserrat', sans-serif;
     list-style-type: none;
     transition: opacity 0.3s ease, transform 0.3s ease;
