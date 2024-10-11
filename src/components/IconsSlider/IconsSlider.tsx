@@ -18,7 +18,7 @@ const IconsSlider: React.FC = () => {
     { icon: <SiFigma />, color: '#F24E1E' },
   ];
 
-  const duplicateIcons = [...icons, ...icons, ...icons, ...icons]; // Duplica os ícones 4 vezes
+  const duplicateIcons = [...icons, ...icons, ...icons, ...icons, ...icons, ...icons];
 
   return (
     <SliderContainer>
