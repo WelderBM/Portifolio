@@ -1,6 +1,6 @@
 <h1 align="center">Meu Portifolio</h1>
 
-![Meu Portifolio](https://raw.githubusercontent.com/WelderBM/Portifolio/main/src/assets/printScreenPortifolio.png)
+<img src="./src/assets/printScreenPortifolio.png" alt="Meu Portifolio"/>
 
 <h2 align="center"><a href="https://welderbm.github.io/Portifolio/">View site</a></h2>
 
