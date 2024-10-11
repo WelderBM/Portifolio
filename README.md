@@ -1,8 +1,6 @@
 <h1 align="center">Meu Portifolio</h1>
-
-<img src="./gifPortifolio.gif" width="100%" alt="Portfolio GIF"/>
-
-<h2 align="center"><a href="https://welderbarroso.netlify.app/">View site</a></h2>
+<img src="/gifPortifolio.gif" alt="Meu Portifolio" />
+<h2 align="center"><a href="https://welderbm.github.io/Portifolio/">View site</a></h2>
 
 ## Index
 
@@ -10,7 +8,6 @@
 - <a href="#como-rodar">How to run this project</a>
 - <a href="#tecnologias-ultilizadas">Technologies used</a>
 - <a href="#pessoas-autoras">Authors</a>
-- <a href="#proximos-passos">Next steps</a>
 
 <h2 id="funcionalidades-do-projeto">Features</h2>
 
@@ -26,7 +23,7 @@
     $ git clone linkrepo
 
     # Access the project folder in your terminal
-    $ cd Portifolio
+    $ cd instagram-app
 
     # Install the dependencies
     $ npm install
@@ -38,9 +35,10 @@
     # or
     $ yarn dev
 ```
-<h2 id="tecnologias-ultilizadas">Technologies used</h2>
-React
-Vite
-<h2 id="pessoas-autoras">Authors</h2> <img alt="my profile picture" src="./perfil-quadrado.JPG" width="200"/> welder barroso <h2 id="proximos-passos">Next steps</h2>
- implement like feature that can be changed by the user
- implement search.
+<h2 id="tecnologias-ultilizadas">Technologies used</h2> 
+
+1. [React](https://react.dev/)
+1. [Vite](https://vitejs.dev/)
+
+<h2 id="pessoas-autoras">Authors</h2> 
+<img alt="my profile picture" src="./perfil-quadrado.JPG" width="200"/>
