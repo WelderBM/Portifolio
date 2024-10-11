@@ -2,7 +2,7 @@
 
 <img src="printScreenPortfolio.png" alt="Meu Portifolio"/>
 
-<h2 align="center"><a href="https://welderbm.github.io/Portifolio/">View site</a></h2>
+<h2 align="center"><a href="https://welderbarroso.netlify.app/">View site</a></h2>
 
 ## Index
 
@@ -13,12 +13,12 @@
 
 <h2 id="funcionalidades-do-projeto">Features</h2>
 
-- ✅ Tema dark e tema light e botão para troca entre eles. 🌙☀️  
-- ✅ Responsividade entre telas. 📱💻  
-- ✅ Vários tipos de animações entre links, ícones e Cards. 🎨✨  
-- ✅ Transição de lista superior para vertical em telas menores, tendo a possibilidade de ativar ou não sua aparição. 🔄📋  
-- ✅ Possível mudar de idioma entre português e inglês. 🇧🇷🇬🇧  
-- ✅ Uso de slider para cards. 🎠📊  
+- ✅ Dark and light themes with a button to switch between them. 🌙☀️
+- ✅ Responsiveness across screens. 📱💻
+- ✅ Various types of animations for links, icons, and cards. 🎨✨
+- ✅ Transition from a top list to vertical on smaller screens, with the option to toggle its appearance. 🔄📋
+- ✅ Ability to switch languages between Portuguese and English. 🇧🇷🇬🇧
+- ✅ Use of a slider for cards. 🎠📊
 
 <br>
 
@@ -43,10 +43,11 @@
 ```
 <h2 id="tecnologias-ultilizadas">Technologies used</h2> 
 
-1. [JavaScript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)  
-2. [TypeScript](https://www.typescriptlang.org/docs/)  
-3. [React](https://react.dev/)  
-4. [Vite](https://vitejs.dev/guide/)  
+1. [JavaScript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
+2. [TypeScript](https://www.typescriptlang.org/docs/)
+3. [React](https://react.dev/)
+4. [Vite](https://vitejs.dev/guide/)
 
 <h2 id="pessoas-autoras">Authors</h2> 
 <img alt="my profile picture" src="./perfil-quadrado.JPG" width="200"/>
+welder barroso
