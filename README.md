@@ -37,6 +37,7 @@
     $ npm run dev
     # or
     $ yarn dev
+```
 <h2 id="tecnologias-ultilizadas">Technologies used</h2>
 React
 Vite
