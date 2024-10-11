@@ -66,3 +66,29 @@ export const Description = styled.p`
     font-size: 16px;
   }
 `;
+
+export const SecondTitle = styled.p`
+  margin-top: 20px;
+  color: #f97c22;
+  font-size: 24px;
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+
+  @media (max-width: 810px) {
+    font-size: 16px;
+  }
+`;
+
+export const Button = styled.button<{ backgroundColor: string, fontColor: string }>`
+  background-color: ${(props) => props.backgroundColor};
+  color: ${(props) => props.fontColor};
+  border: none;
+  border-radius: 20px;
+  padding: 5px 15px;
+  margin: 5px;
+  transition: background-color 0.3s;
+
+  &:hover {
+    opacity: 0.9;
+  }
+`;
