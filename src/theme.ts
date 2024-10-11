@@ -1,13 +1,13 @@
-export const lightTheme = {
-    body: '#e0e0e0',
-    fontColor: '#000',
-    backgroundColor: '#c0c0c0',
-    neutralColor: '#8d99ae'
-}
-
 export const darkTheme = {
-    body: '#000',
-    fontColor: '#fff',
-    backgroundColor: '#1f1f1f',
-    neutralColor: '#424242'
-}
+  body: '#1f1f1f80',
+  fontColor: '#ffffff',
+  backgroundColor: '#1f1f1f',
+  neutralColor: '#9e9e9e'
+};
+
+export const lightTheme = {
+  body: '#e6e6e680',
+  fontColor: '#1f1f1f',
+  backgroundColor: '#e6e6e6',
+  neutralColor: '#5e5e5e'
+};

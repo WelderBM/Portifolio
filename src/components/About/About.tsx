@@ -4,7 +4,7 @@ import programmer from '/programmer.png';
 import ButtonLink from '../DownloadCv/DownloadCv';
 import { useTranslation } from 'react-i18next';
 
-const ContactIcons = () => {
+const AboutComponent = () => {
   const { t } = useTranslation();
 
   return (
@@ -21,4 +21,4 @@ const ContactIcons = () => {
   );
 };
 
-export default ContactIcons;
+export default AboutComponent;

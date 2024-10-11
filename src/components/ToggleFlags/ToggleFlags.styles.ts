@@ -6,19 +6,19 @@ export const DropdownContainer = styled.div`
 `;
 
 export const CircleButton = styled.button`
-  width: 40px;
-  height: 40px;
+  width: 34px;
+  height: 34px;
   border-radius: 50%;
   border: none;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: ${props => props.theme.neutralColor};
+  background-color: ${props => props.theme.fontColor};
   cursor: pointer;
   transition: background-color 0.3s ease;
 
   &:hover {
-    background-color: #f0f0f0;
+    background-color: ${props => props.theme.neutralColor};
   }
 `;
 
