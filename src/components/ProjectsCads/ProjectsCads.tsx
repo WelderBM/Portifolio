@@ -1,11 +1,19 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import Card from '../Card/Card';
-import { Container, Title, Paragraph } from './ProjectsCads.styles';
+import {
+  Container,
+  Title,
+  Paragraph,
+  CarouselWrapper,
+  CarouselContent,
+  CardWrapper,
+  ArrowButton,
+} from './ProjectsCads.styles';
+import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 import { useTranslation } from 'react-i18next';
 
 const ProjectsCads: React.FC = () => {
   const { t } = useTranslation();
-
   const projectData = [
     {
       imageSrc: "/instagramApp.png",
@@ -111,23 +119,92 @@ const ProjectsCads: React.FC = () => {
     },
   ];
 
+  const [projects, setProjects] = useState([...projectData]);
+  const [isAutoSliding, setIsAutoSliding] = useState(true);
+  const [visibleProjects, setVisibleProjects] = useState(3); // Estado para controlar o número de projetos visíveis
+
+  const totalCards = projects.length;
+
+  const handleNext = () => {
+    setProjects((prevProjects) => [
+      ...prevProjects.slice(2),
+      prevProjects[0],
+      prevProjects[1],
+    ]);
+  };
+
+  const handlePrev = () => {
+    setProjects((prevProjects) => [
+      prevProjects[totalCards - 2],
+      prevProjects[totalCards - 1],
+      ...prevProjects.slice(0, totalCards - 2),
+    ]);
+  };
+
+  useEffect(() => {
+    let interval: NodeJS.Timeout;
+    if (isAutoSliding) {
+      interval = setInterval(handleNext, 8000);
+    }
+    return () => clearInterval(interval);
+  }, [isAutoSliding]);
+
+  const handleMouseEnter = () => {
+    setIsAutoSliding(false);
+  };
+
+  const handleMouseLeave = () => {
+    setIsAutoSliding(true);
+  };
+
+  const updateVisibleProjects = () => {
+    const width = window.innerWidth;
+    if (width > 1200) {
+      setVisibleProjects(3);
+    } else if (width > 768) {
+      setVisibleProjects(2);
+    } else {
+      setVisibleProjects(1);
+    }
+  };
+
+  useEffect(() => {
+    updateVisibleProjects(); // Chama a função no primeiro render
+    window.addEventListener('resize', updateVisibleProjects); // Adiciona o listener de resize
+
+    return () => {
+      window.removeEventListener('resize', updateVisibleProjects); // Limpa o listener ao desmontar
+    };
+  }, []);
+
   return (
     <Container>
       <Title>{t('projects.title')}</Title>
       <Paragraph>{t('projects.description')}</Paragraph>
 
-      <div style={{ display: 'flex', justifyContent: 'center', flexWrap: 'wrap' }}>
-        {projectData.map((project, index) => (
-          <Card 
-            key={index}
-            imageSrc={project.imageSrc}
-            title={project.title}
-            description={project.description}
-            buttonNames={project.buttonNames}
-            buttonColors={project.buttonColors}
-          />
-        ))}
-      </div>
+      <CarouselWrapper>
+        <ArrowButton position="left" onClick={handlePrev}>
+          <FaChevronLeft />
+        </ArrowButton>
+        <CarouselContent>
+          {projects.slice(0, visibleProjects).map((project, index) => ( // Usa o número de projetos visíveis
+            <CardWrapper key={index}>
+              <Card
+                imageSrc={project.imageSrc}
+                title={project.title}
+                description={project.description}
+                buttonNames={project.buttonNames}
+                buttonColors={project.buttonColors}
+                onMouseEnter={handleMouseEnter}
+                onMouseLeave={handleMouseLeave}
+              />
+            </CardWrapper>
+          ))}
+        </CarouselContent>
+        <ArrowButton position="right" onClick={handleNext}>
+          <FaChevronRight />
+        </ArrowButton>
+      </CarouselWrapper>
     </Container>
   );
 };

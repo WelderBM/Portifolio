@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 export const HiPhrase = styled.p`
   display: flex;
@@ -8,7 +8,11 @@ export const HiPhrase = styled.p`
   font-weight: 600;
   font-size: 1.8rem;
   font-family: 'Montserrat', sans-serif;
-`
+
+  @media (max-width: 810px) {
+    font-size: 1.5rem;
+  }
+`;
 
 export const MyName = styled.p`
   color: ${props => props.theme.fontColor};
@@ -16,7 +20,12 @@ export const MyName = styled.p`
   font-weight: 600;
   margin-bottom: 10px;
   font-family: 'Roboto';
-`
+  text-align: center;
+
+  @media (max-width: 810px) {
+    font-size: 2.5rem;
+  }
+`;
 
 export const Paragraph = styled.p`
   color: ${props => props.theme.fontColor};
@@ -24,4 +33,8 @@ export const Paragraph = styled.p`
   font-weight: 600;
   margin-bottom: 30px;
   font-family: 'Montserrat', sans-serif;
-`
+
+  @media (max-width: 810px) {
+    font-size: 1.2rem;
+  }
+`;

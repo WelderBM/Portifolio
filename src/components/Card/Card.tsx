@@ -7,9 +7,11 @@ interface ProjectCardsProps {
   description: string;
   buttonNames: string[];
   buttonColors: string[];
+  onMouseEnter?: () => void; // Nova prop
+  onMouseLeave?: () => void; // Nova prop
 }
 
-const Card: React.FC<ProjectCardsProps> = ({ imageSrc, title, description, buttonNames, buttonColors }) => {
+const Card: React.FC<ProjectCardsProps> = ({ imageSrc, title, description, buttonNames, buttonColors, onMouseEnter, onMouseLeave }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const handleImageClick = () => {
@@ -22,24 +24,27 @@ const Card: React.FC<ProjectCardsProps> = ({ imageSrc, title, description, butto
 
   return (
     <>
-    {isOpen && (
-      <Overlay onClick={handleOverlayClick}>
-        <EnlargedImage src={imageSrc} alt="Enlarged Project" />
-      </Overlay>
-    )}
+      {isOpen && (
+        <Overlay onClick={handleOverlayClick}>
+          <EnlargedImage src={imageSrc} alt="Enlarged Project" />
+        </Overlay>
+      )}
     
-    <CardContainer>
-      <Image src={imageSrc} alt="Project" onClick={handleImageClick} style={{ cursor: 'pointer' }} />
-      <ButtonContainer>
-        {buttonNames.map((name, index) => (
-          <Button key={index} color={buttonColors[index]}>
-            {name}
-          </Button>
-        ))}
-      </ButtonContainer>
-      <Title>{title}</Title>
-      <Description>{description}</Description>
-    </CardContainer>
+      <CardContainer 
+        onMouseEnter={onMouseEnter}  // Chama a função ao passar o mouse
+        onMouseLeave={onMouseLeave}  // Chama a função ao sair o mouse
+      >
+        <Image src={imageSrc} alt="Project" onClick={handleImageClick} style={{ cursor: 'pointer' }} />
+        <ButtonContainer>
+          {buttonNames.map((name, index) => (
+            <Button key={index} color={buttonColors[index]}>
+              {name}
+            </Button>
+          ))}
+        </ButtonContainer>
+        <Title>{title}</Title>
+        <Description>{description}</Description>
+      </CardContainer>
     </>
   );
 };
