@@ -1,6 +1,6 @@
 <h1 align="center">Meu Portifolio</h1>
 
-<video width="100%" controls>
+<video width="100%" autoplay muted loop>
     <source src="./videoPortifolio.mp4" type="video/mp4">
     Your browser does not support the video tag.
 </video>
@@ -40,3 +40,9 @@
     $ npm run dev
     # or
     $ yarn dev
+<h2 id="tecnologias-ultilizadas">Technologies used</h2>
+React
+Vite
+<h2 id="pessoas-autoras">Authors</h2> <img alt="my profile picture" src="./perfil-quadrado.JPG" width="200"/> welder barroso <h2 id="proximos-passos">Next steps</h2>
+ implement like feature that can be changed by the user
+ implement search.
