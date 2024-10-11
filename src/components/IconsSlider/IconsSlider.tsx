@@ -18,16 +18,13 @@ const IconsSlider: React.FC = () => {
     { icon: <SiFigma />, color: '#F24E1E' },
   ];
 
+  const duplicateIcons = [...icons, ...icons, ...icons, ...icons]; // Duplica os ícones 4 vezes
+
   return (
     <SliderContainer>
       <Slider>
-        {icons.map((item, index) => (
+        {duplicateIcons.map((item, index) => (
           <IconItem key={index} color={item.color}>
-            {item.icon}
-          </IconItem>
-        ))}
-        {icons.map((item, index) => (
-          <IconItem key={`duplicate-${index}`} color={item.color}>
             {item.icon}
           </IconItem>
         ))}
