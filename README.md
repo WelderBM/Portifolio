@@ -1,5 +1,7 @@
 <h1 align="center">Meu Portifolio</h1>
-<img src="/gifPortifolio.gif" alt="Meu Portifolio" />
+
+![Meu Portifolio](src/assets/gifPortifolio.gif)
+
 <h2 align="center"><a href="https://welderbm.github.io/Portifolio/">View site</a></h2>
 
 ## Index
