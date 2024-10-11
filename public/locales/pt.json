@@ -3,55 +3,55 @@
     "start": "Início",
     "about": "Sobre",
     "projects": "Projetos",
-    "contacts": "Contatos",
+    "contacts": "Contato",
     "download_cv": "Baixar CV"
   },
   "texts": {
-    "hello_visitor": "Olá, visitante!",
-    "my_name": "Meu nome é Welder",
+    "hello_visitor": "Olá e bem-vindo!",
+    "my_name": "Eu sou Welder",
     "job_title": "Desenvolvedor Front-end"
   },
   "about": {
-    "image_alt": "imagem de um programador em cartoon",
-    "title": "Sobre",
-    "description_1": "Olá! Me chamo Welder e sou Desenvolvedor Front-end com 2 anos de experiência, especializado em criar interfaces visuais rápidas e fluídas. Concentro-me em soluções impactantes usando:",
-    "description_2": "Experiência em revisão de código, atualização de legados e aplicação de Clean Code. Ágil com Scrum.",
+    "image_alt": "cartoon de um programador",
+    "title": "Sobre Mim",
+    "description_1": "Olá! Eu sou Welder, Desenvolvedor Front-end com 2 anos de experiência, apaixonado por criar interfaces dinâmicas e eficientes.",
+    "description_2": "Tenho experiência em revisão de código, atualização de sistemas legados e aplicação dos princípios do Clean Code. Ágil com Scrum.",
     "download_cv": "Baixar CV"
   },
   "projects": {
     "title": "Projetos",
-    "description": "Aqui, você vai saber sobre os projetos que já participei. Ao clicar sobre os cards, você verá um modal com mais explicações sobre cada projeto incrível!",
+    "description": "Explore os projetos nos quais trabalhei. Clique nos cards para obter mais detalhes sobre cada um.",
     "instagram_app": {
-      "title": "Instagram App",
-      "description": "Projeto de Instagram com a possibilidade de troca do tema dark e light, além de ser um aplicativo que faz consumo de API de fotos."
+      "title": "App Instagram",
+      "description": "Um app com tema de Instagram, com troca de temas (claro/escuro) e integração com uma API de fotos."
     },
     "burger_app": {
-      "title": "Burger App",
-      "description": "App para fazer pedidos de lanches, com duas telas e transição entre elas, além de poder apagar os pedidos."
+      "title": "App de Pedidos de Lanche",
+      "description": "App para realizar pedidos de lanches, com transições entre telas e gerenciamento de pedidos."
     },
     "weather_forecast": {
-      "title": "Weather Forecast",
-      "description": "Site que consome uma API de clima por cidade e mostra informações do tempo atual e dos próximos 5 dias."
+      "title": "Previsão do Tempo",
+      "description": "Este site busca dados meteorológicos para qualquer cidade, mostrando o clima atual e a previsão para os próximos 5 dias."
     },
     "login_fotografia": {
-      "title": "Login com tema de Fotografia",
-      "description": "Projeto realizado para uma vaga de emprego, que me ajudou a conseguir minha primeira vaga."
+      "title": "Login com Tema Fotografia",
+      "description": "Página de login criada para uma candidatura a emprego, que me ajudou a conseguir minha primeira vaga."
     },
     "login_dark": {
-      "title": "Login com tema Dark",
-      "description": "Tela de login simples e caprichada, feita com HTML e CSS."
+      "title": "Login com Tema Dark",
+      "description": "Uma tela de login simples e elegante, feita com HTML e CSS."
     },
     "landing_halloween": {
-      "title": "Landing Page com tema Halloween",
-      "description": "Projeto para testar minhas habilidades com animação e responsividade."
+      "title": "Landing Page Halloween",
+      "description": "Um projeto divertido para praticar animações e design responsivo."
     },
     "login_black_white": {
-      "title": "Página de login preto e branco",
-      "description": "Site com animação de transição simples e links nos botões."
+      "title": "Login Preto e Branco",
+      "description": "Uma página de login simples com animações suaves de transição."
     },
     "landing_padaria": {
-      "title": "Landing page de uma padaria",
-      "description": "Site para praticar minhas habilidades de estilo, com implementação de API de envio de e-mail."
+      "title": "Landing Page Padaria",
+      "description": "Site desenvolvido para aprimorar minhas habilidades de estilo, com implementação de API de envio de e-mails."
     }
   }
 }

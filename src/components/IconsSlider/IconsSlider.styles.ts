@@ -16,6 +16,7 @@ export const SliderContainer = styled.div`
   display: flex;
   align-items: center;
   background-color: ${props => props.theme.backgroundColor};
+  z-index: 1;
   
   &:hover div {
     animation-play-state: paused;

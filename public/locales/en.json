@@ -1,57 +1,57 @@
 {
   "header": {
-    "start": "Start",
+    "start": "Home",
     "about": "About",
     "projects": "Projects",
-    "contacts": "Contacts",
-    "download_cv": "Download CV"
+    "contacts": "Contact",
+    "download_cv": "Download Resume"
   },
   "texts": {
-    "hello_visitor": "Hello, visitor!",
-    "my_name": "My name is Welder",
+    "hello_visitor": "Hello and welcome!",
+    "my_name": "I'm Welder",
     "job_title": "Front-end Developer"
   },
   "about": {
-    "image_alt": "image of a cartoon programmer",
-    "title": "About",
-    "description_1": "Hello! My name is Welder and I'm a Front-end Developer with 2 years of experience specializing in creating fast and fluid visual interfaces. I focus on impactful solutions using:",
-    "description_2": "Experience in code review, legacy updates, and applying Clean Code. Agile with Scrum.",
-    "download_cv": "Download CV"
+    "image_alt": "cartoon of a programmer",
+    "title": "About Me",
+    "description_1": "Hi! I'm Welder, a Front-end Developer with 2 years of experience, passionate about creating dynamic and efficient interfaces.",
+    "description_2": "I bring experience in code reviews, modernizing legacy systems, and adhering to Clean Code principles. Agile with Scrum.",
+    "download_cv": "Download Resume"
   },
   "projects": {
     "title": "Projects",
-    "description": "Here, you will learn about the projects I have participated in. By clicking on the cards, you will see a modal with more details about each amazing project!",
+    "description": "Explore the projects I've worked on. Click the cards for detailed insights into each exciting project.",
     "instagram_app": {
       "title": "Instagram App",
-      "description": "Instagram project with the ability to switch between dark and light themes, as well as an app that consumes a photo API."
+      "description": "An Instagram-themed app with theme switching (light/dark) and integration with a photo API."
     },
     "burger_app": {
       "title": "Burger App",
-      "description": "App to place burger orders, with two screens and transitions between them, as well as the ability to delete orders."
+      "description": "An app for ordering burgers with transitions between screens and the ability to manage orders."
     },
     "weather_forecast": {
       "title": "Weather Forecast",
-      "description": "A website that consumes a weather API by city and shows current weather information and forecasts for the next 5 days."
+      "description": "This site fetches weather data for any city, showing current conditions and a 5-day forecast."
     },
     "login_fotografia": {
-      "title": "Login with Photography theme",
-      "description": "Project made for a job application, which helped me land my first job."
+      "title": "Photography Login",
+      "description": "A themed login page created for a job application, which helped me land my first role."
     },
     "login_dark": {
-      "title": "Login with Dark theme",
-      "description": "A simple and refined login screen made with HTML and CSS."
+      "title": "Dark Theme Login",
+      "description": "A clean, elegant login screen built with HTML and CSS."
     },
     "landing_halloween": {
-      "title": "Landing Page with Halloween theme",
-      "description": "Project to test my skills with animation and responsiveness."
+      "title": "Halloween Landing Page",
+      "description": "A fun project to practice animations and responsive design."
     },
     "login_black_white": {
       "title": "Black and White Login Page",
-      "description": "Site with simple transition animation and button links."
+      "description": "A simple login page featuring smooth transition animations."
     },
     "landing_padaria": {
       "title": "Bakery Landing Page",
-      "description": "Website made to practice my styling skills, with email sending API implementation."
+      "description": "A site designed to refine my styling skills, with an email sending API implementation."
     }
   }
 }

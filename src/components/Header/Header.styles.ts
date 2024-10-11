@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 export const Header = styled.header`
+  z-index: 2;
   width: 100%;
   position: fixed;
   color: ${(props) => props.theme.fontColor};

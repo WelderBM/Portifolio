@@ -11,7 +11,7 @@ import { Background, Content, Main, BackgroundGeometric, BackgroundBack } from '
 import Header from './components/Header/Header';
 import Texts from './components/Texts/Texts';
 import ContactIcons from './components/ContactIcons/ContactIcons';
-import ScrollableComponent from './components/ScrollableComponent/ScrollableComponent';
+import IconsSlider from './components/IconsSlider/IconsSlider';
 import About from './components/About/About';
 import ProjectsCads from './components/ProjectsCads/ProjectsCads';
 import WhatsAppPopup from './components/WhatsAppPopup/WhatsAppPopup';
@@ -36,7 +36,7 @@ function App() {
               <Texts/>
               <ContactIcons theme={theme} />
             </Main>
-            <ScrollableComponent />
+            <IconsSlider />
           </Content>
         </Background>
         <BackgroundGeometric id='sobre'>
