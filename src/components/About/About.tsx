@@ -35,8 +35,8 @@ const AboutComponent = () => {
           {languages.buttonNames.map((name, index) => (
             <Button 
               key={index} 
-              backgroundColor={languages.buttonColors[index]} 
-              fontColor={languages.fontColors[index]}
+              backgroundCol={languages.buttonColors[index]} 
+              fontCol={languages.fontColors[index]}
             >
               {name}
             </Button>

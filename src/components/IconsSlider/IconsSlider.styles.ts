@@ -16,8 +16,8 @@ export const SliderContainer = styled.div`
   display: flex;
   align-items: center;
   background-color: ${props => props.theme.backgroundColor};
-  z-index: 1;
-  
+  z-index: 100;
+
   &:hover div {
     animation-play-state: paused;
   }
@@ -40,20 +40,20 @@ export const IconItem = styled.div<{ color: string }>`
   font-size: 20px;
   color: #333;
 
+  div {
+    font-weight: bold;
+    font-size: 20px;
+  }
+
   svg {
     font-size: 30px;
     transition: transform 0.2s ease, color 0.3s ease;
     color: #808080;
-  }
 
-  &:hover svg {
-    color: ${(props) => props.color};
-    transform: scale(1.1);
-    cursor: pointer;
-  }
-
-  div {
-    font-weight: bold;
-    font-size: 20px;
+    &:hover {
+      color: ${(props) => props.color};
+      transform: scale(1.1);
+      cursor: pointer;
+    }
   }
 `;

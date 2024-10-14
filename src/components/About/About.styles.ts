@@ -79,9 +79,9 @@ export const SecondTitle = styled.p`
   }
 `;
 
-export const Button = styled.button<{ backgroundColor: string, fontColor: string }>`
-  background-color: ${(props) => props.backgroundColor};
-  color: ${(props) => props.fontColor};
+export const Button = styled.button<{ backgroundCol: string, fontCol: string }>`
+  background-color: ${(props) => props.backgroundCol};
+  color: ${(props) => props.fontCol};
   border: none;
   border-radius: 20px;
   padding: 5px 15px;

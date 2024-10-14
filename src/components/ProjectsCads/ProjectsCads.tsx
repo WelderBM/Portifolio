@@ -8,12 +8,17 @@ import {
   CarouselContent,
   CardWrapper,
   ArrowButton,
+  FadeInRight,
+  FadeInLeft,
+  FadeOutRight,
+  FadeOutLeft,
 } from './ProjectsCads.styles';
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 import { useTranslation } from 'react-i18next';
 
 const ProjectsCads: React.FC = () => {
   const { t } = useTranslation();
+
   const projectData = [
     {
       imageSrc: "/instagramApp.png",
@@ -120,61 +125,49 @@ const ProjectsCads: React.FC = () => {
   ];
 
   const [projects, setProjects] = useState([...projectData]);
-  const [isAutoSliding, setIsAutoSliding] = useState(true);
-  const [visibleProjects, setVisibleProjects] = useState(3); // Estado para controlar o número de projetos visíveis
-
+  const [visibleProjects, setVisibleProjects] = useState(3);
+  const [slideDirection, setSlideDirection] = useState<'left' | 'right'>('right');
+  const [fadeOut, setFadeOut] = useState(false);
   const totalCards = projects.length;
+  const cardWidth = 340;
 
   const handleNext = () => {
-    setProjects((prevProjects) => [
-      ...prevProjects.slice(2),
-      prevProjects[0],
-      prevProjects[1],
-    ]);
+    setFadeOut(true);
+    setSlideDirection('right');
+    setTimeout(() => {
+      setProjects((prevProjects) => [
+        ...prevProjects.slice(visibleProjects),
+        ...prevProjects.slice(0, visibleProjects),
+      ]);
+      setFadeOut(false);
+    }, 500);
   };
 
   const handlePrev = () => {
-    setProjects((prevProjects) => [
-      prevProjects[totalCards - 2],
-      prevProjects[totalCards - 1],
-      ...prevProjects.slice(0, totalCards - 2),
-    ]);
-  };
-
-  useEffect(() => {
-    let interval: NodeJS.Timeout;
-    if (isAutoSliding) {
-      interval = setInterval(handleNext, 8000);
-    }
-    return () => clearInterval(interval);
-  }, [isAutoSliding]);
-
-  const handleMouseEnter = () => {
-    setIsAutoSliding(false);
-  };
-
-  const handleMouseLeave = () => {
-    setIsAutoSliding(true);
+    setFadeOut(true);
+    setSlideDirection('left');
+    setTimeout(() => {
+      setProjects((prevProjects) => [
+        ...prevProjects.slice(-visibleProjects),
+        ...prevProjects.slice(0, totalCards - visibleProjects),
+      ]);
+      setFadeOut(false);
+    }, 500);
   };
 
   const updateVisibleProjects = () => {
     const width = window.innerWidth;
-    if (width > 1200) {
-      setVisibleProjects(3);
-    } else if (width > 768) {
-      setVisibleProjects(2);
-    } else {
-      setVisibleProjects(1);
-    }
+    const availableSpace = width - 200;
+    const numVisibleCards = Math.floor(availableSpace / cardWidth);
+    const maxVisibleCards = Math.min(numVisibleCards, projects.length);
+    setVisibleProjects(maxVisibleCards > 0 ? maxVisibleCards : 1);
   };
 
   useEffect(() => {
-    updateVisibleProjects(); // Chama a função no primeiro render
-    window.addEventListener('resize', updateVisibleProjects); // Adiciona o listener de resize
-
-    return () => {
-      window.removeEventListener('resize', updateVisibleProjects); // Limpa o listener ao desmontar
-    };
+    updateVisibleProjects();
+    window.addEventListener('resize', updateVisibleProjects);
+    return () => window.removeEventListener('resize', updateVisibleProjects);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (
@@ -186,21 +179,24 @@ const ProjectsCads: React.FC = () => {
         <ArrowButton position="left" onClick={handlePrev}>
           <FaChevronLeft />
         </ArrowButton>
+
         <CarouselContent>
-          {projects.slice(0, visibleProjects).map((project, index) => ( // Usa o número de projetos visíveis
-            <CardWrapper key={index}>
+          {projects.slice(0, visibleProjects).map((project, index) => (
+            <CardWrapper
+              key={index}
+              as={fadeOut ? (slideDirection === 'right' ? FadeOutLeft : FadeOutRight) : (slideDirection === 'right' ? FadeInRight : FadeInLeft)}
+            >
               <Card
                 imageSrc={project.imageSrc}
                 title={project.title}
                 description={project.description}
                 buttonNames={project.buttonNames}
                 buttonColors={project.buttonColors}
-                onMouseEnter={handleMouseEnter}
-                onMouseLeave={handleMouseLeave}
               />
             </CardWrapper>
           ))}
         </CarouselContent>
+
         <ArrowButton position="right" onClick={handleNext}>
           <FaChevronRight />
         </ArrowButton>

@@ -7,11 +7,9 @@ interface ProjectCardsProps {
   description: string;
   buttonNames: string[];
   buttonColors: string[];
-  onMouseEnter?: () => void; // Nova prop
-  onMouseLeave?: () => void; // Nova prop
 }
 
-const Card: React.FC<ProjectCardsProps> = ({ imageSrc, title, description, buttonNames, buttonColors, onMouseEnter, onMouseLeave }) => {
+const Card: React.FC<ProjectCardsProps> = ({ imageSrc, title, description, buttonNames, buttonColors }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const handleImageClick = () => {
@@ -30,11 +28,8 @@ const Card: React.FC<ProjectCardsProps> = ({ imageSrc, title, description, butto
         </Overlay>
       )}
     
-      <CardContainer 
-        onMouseEnter={onMouseEnter}  // Chama a função ao passar o mouse
-        onMouseLeave={onMouseLeave}  // Chama a função ao sair o mouse
-      >
-        <Image src={imageSrc} alt="Project" onClick={handleImageClick} style={{ cursor: 'pointer' }} />
+      <CardContainer onClick={handleImageClick}>
+        <Image src={imageSrc} alt="Project" style={{ cursor: 'pointer' }} />
         <ButtonContainer>
           {buttonNames.map((name, index) => (
             <Button key={index} color={buttonColors[index]}>

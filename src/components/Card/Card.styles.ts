@@ -10,6 +10,7 @@ export const CardContainer = styled.div`
   position: relative;
   z-index: 1;
   overflow: hidden;
+  cursor: pointer;
 
   /* Sombra contínua estilo Apple */
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15), /* Sombra difusa */

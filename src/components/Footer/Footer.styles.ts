@@ -6,7 +6,7 @@ export const FooterContainer = styled.footer`
   justify-content: center;
   align-items: center;
   padding: 20px;
-  background-color: ${props => props.theme.backgroundColor}; 
+  background-color: ${({ theme }) => theme.backgroundColor}; 
 
   @media (min-width: 768px) {
     flex-direction: row; /* Muda para linha em telas maiores */
@@ -14,6 +14,13 @@ export const FooterContainer = styled.footer`
   }
 `;
 
+const colors = {
+  whatsapp: '#25D366',
+  linkedin: '#0077B5',
+  github: '#181717',
+};
+
+// Componente Row com efeitos de hover
 export const Row = styled.div`
   display: flex;
   align-items: center;
@@ -34,9 +41,36 @@ export const Row = styled.div`
     color: ${({ theme }) => theme.fontColor};
     font-weight: bold;
     transition: color 0.3s ease;
+    padding: 5px;
+    border-radius: 10px;
 
-    &:hover {
-      color: ${({ theme }) => theme.neutralColor};
+    &:nth-child(1):hover {
+      color: ${colors.whatsapp}; 
+    }
+
+    &:nth-child(2):hover {
+      color: ${colors.linkedin};
+    }
+
+    &:nth-child(3):hover {
+      color: ${colors.github}; 
+      background: ${({ theme }) => theme.fontColor};
+    }
+
+    svg {
+      transition: color 0.3s;
+    }
+
+    &:nth-child(1):hover svg {
+      color: ${colors.whatsapp};
+    }
+
+    &:nth-child(2):hover svg {
+      color: ${colors.linkedin}; 
+    }
+
+    &:nth-child(3):hover svg {
+      color: ${colors.github}; 
     }
   }
 `;
