@@ -44,14 +44,14 @@ function App() {
         id="sobre"
         ref={aboutRef}
       >
-        <div className={`animate-section ${aboutInView ? 'visible' : ''}`}><About/></div>
+        <div style={{width: "100%", margin: "0", zIndex:"1"}} className={`animate-section ${aboutInView ? 'visible' : ''}`}><About/></div>
         
       </BackgroundGeometric>
       <BackgroundBack
         id="projetos"
         ref={projectsRef}
       >
-        <div className={`animate-section ${projectsInView ? 'visible' : ''}`}><ProjectsCads /></div>
+        <div style={{width: "100%", margin: "0", zIndex:"1"}} className={`animate-section ${projectsInView ? 'visible' : ''}`}><ProjectsCads /></div>
         
       </BackgroundBack>
       <Footer id="contatos" theme={theme} />

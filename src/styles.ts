@@ -77,12 +77,12 @@ export const BackgroundGeometric = styled.div`
 `
 export const BackgroundBack = styled.div`
   width: 100%;
-  width: 100%;
   min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
+  margin: 0 !important;
 
   background-color: ${props => props.theme.body};
   background-size: cover;
