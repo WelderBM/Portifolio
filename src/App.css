@@ -7,3 +7,13 @@
   transform: scale(1.2);
   color: #f97c22 !important;
 }
+
+.animate-section {
+  transform: translateX(50%);
+  transition: transform 1s ease-out;
+}
+
+.animate-section.visible {
+  transform: translateX(0);
+}
+

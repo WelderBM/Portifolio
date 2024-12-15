@@ -12,6 +12,7 @@ export const GlobalStyle = createGlobalStyle<Props>`
         width: 100%;
         height: 100%;
         overflow-y: scroll;
+        overflow-x: hidden;
         scrollbar-width: thin;
         scrollbar-color: #f97c22 ${props => props.theme.body};
     }

@@ -1,12 +1,11 @@
-import { useState } from 'react'
-import './App.css'
+import { useState } from 'react';
+import { useInView } from 'react-intersection-observer';
+import './App.css';
+import { ThemeProvider } from 'styled-components';
+import { GlobalStyle } from './GlobalStyles';
+import { darkTheme, lightTheme } from './theme';
 
-import { ThemeProvider } from 'styled-components'
-import { GlobalStyle } from './GlobalStyles'
-import { darkTheme, lightTheme } from './theme'
-
-
-import { Background, Content, Main, BackgroundGeometric, BackgroundBack } from './styles'
+import { Background, Content, Main, BackgroundGeometric, BackgroundBack } from './styles';
 
 import Header from './components/Header/Header';
 import Texts from './components/Texts/Texts';
@@ -18,37 +17,46 @@ import WhatsAppPopup from './components/WhatsAppPopup/WhatsAppPopup';
 import Footer from './components/Footer/Footer';
 
 function App() {
+  const [theme, setTheme] = useState("dark");
 
-  const [theme, setTheme] = useState("dark")
-  
   const themeToggler = () => {
-     return theme === "light" ? setTheme('dark') : setTheme('light')
-  }
+    return theme === "light" ? setTheme('dark') : setTheme('light');
+  };
+
+  const [aboutRef, aboutInView] = useInView({ threshold: 0.2 });
+  const [projectsRef, projectsInView] = useInView({ threshold: 0.2 });
 
   return (
-    <ThemeProvider theme={theme === 'light' ? lightTheme : darkTheme }>
-      <GlobalStyle theme={theme === 'light' ? lightTheme : darkTheme }/>
-        <WhatsAppPopup  />
-        <Background id='inicio'>
-          <Content>
-            <Header themeToggler={themeToggler}/>
-            <Main>
-              <Texts/>
-              <ContactIcons theme={theme} />
-            </Main>
-            <IconsSlider />
-          </Content>
-        </Background>
-        <BackgroundGeometric id='sobre'>
-          <About />
-        </BackgroundGeometric>
-        <BackgroundBack id='projetos'>
-          <ProjectsCads />
-        </BackgroundBack>
-        <Footer id='contatos' theme={theme} />
+    <ThemeProvider theme={theme === 'light' ? lightTheme : darkTheme}>
+      <GlobalStyle theme={theme === 'light' ? lightTheme : darkTheme} />
+      <WhatsAppPopup />
+      <Background id="inicio">
+        <Content>
+          <Header themeToggler={themeToggler} />
+          <Main>
+            <Texts />
+            <ContactIcons theme={theme} />
+          </Main>
+          <IconsSlider />
+        </Content>
+      </Background>
+      <BackgroundGeometric
+        id="sobre"
+        ref={aboutRef}
+      >
+        <div className={`animate-section ${aboutInView ? 'visible' : ''}`}><About/></div>
+        
+      </BackgroundGeometric>
+      <BackgroundBack
+        id="projetos"
+        ref={projectsRef}
+      >
+        <div className={`animate-section ${projectsInView ? 'visible' : ''}`}><ProjectsCads /></div>
+        
+      </BackgroundBack>
+      <Footer id="contatos" theme={theme} />
     </ThemeProvider>
-   
-  )
+  );
 }
 
-export default App
+export default App;
