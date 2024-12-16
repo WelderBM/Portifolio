@@ -167,7 +167,6 @@ const ProjectsCads: React.FC = () => {
     updateVisibleProjects();
     window.addEventListener('resize', updateVisibleProjects);
     return () => window.removeEventListener('resize', updateVisibleProjects);
-  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (
@@ -176,15 +175,25 @@ const ProjectsCads: React.FC = () => {
       <Paragraph>{t('projects.description')}</Paragraph>
 
       <CarouselWrapper>
-        <ArrowButton position="left" onClick={handlePrev}>
-          <FaChevronLeft />
-        </ArrowButton>
+        {visibleProjects < totalCards && (
+          <ArrowButton position="left" onClick={handlePrev}>
+            <FaChevronLeft />
+          </ArrowButton>
+        )}
 
         <CarouselContent>
           {projects.slice(0, visibleProjects).map((project, index) => (
             <CardWrapper
               key={index}
-              as={fadeOut ? (slideDirection === 'right' ? FadeOutLeft : FadeOutRight) : (slideDirection === 'right' ? FadeInRight : FadeInLeft)}
+              as={
+                fadeOut
+                  ? slideDirection === 'right'
+                    ? FadeOutLeft
+                    : FadeOutRight
+                  : slideDirection === 'right'
+                  ? FadeInRight
+                  : FadeInLeft
+              }
             >
               <Card
                 imageSrc={project.imageSrc}
@@ -197,9 +206,11 @@ const ProjectsCads: React.FC = () => {
           ))}
         </CarouselContent>
 
-        <ArrowButton position="right" onClick={handleNext}>
-          <FaChevronRight />
-        </ArrowButton>
+        {visibleProjects < totalCards && (
+          <ArrowButton position="right" onClick={handleNext}>
+            <FaChevronRight />
+          </ArrowButton>
+        )}
       </CarouselWrapper>
     </Container>
   );

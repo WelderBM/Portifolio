@@ -24,7 +24,6 @@ function App() {
   };
 
   const [aboutRef, aboutInView] = useInView({ threshold: 0.2 });
-  const [projectsRef, projectsInView] = useInView({ threshold: 0.2 });
 
   return (
     <ThemeProvider theme={theme === 'light' ? lightTheme : darkTheme}>
@@ -49,9 +48,8 @@ function App() {
       </BackgroundGeometric>
       <BackgroundBack
         id="projetos"
-        ref={projectsRef}
       >
-        <div style={{width: "100%", margin: "0", zIndex:"1"}} className={`animate-section ${projectsInView ? 'visible' : ''}`}><ProjectsCads /></div>
+        <ProjectsCads />
         
       </BackgroundBack>
       <Footer id="contatos" theme={theme} />
