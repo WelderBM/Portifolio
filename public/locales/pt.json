@@ -4,7 +4,7 @@
     "about": "Sobre",
     "projects": "Projetos",
     "contacts": "Contato",
-    "download_cv": "Baixar CV"
+    "download_cv": "Baixar CV (pt-BR)"
   },
   "texts": {
     "hello_visitor": "Olá e bem-vindo!",
@@ -16,7 +16,7 @@
     "title": "Sobre Mim",
     "description_1": "Olá! Eu sou Welder, Desenvolvedor Front-end Técnico em Informática pelo IFRR com mais ou menos 3 anos de experiência, apaixonado por criar interfaces dinâmicas e eficientes.",
     "description_2": "Principais tecnologias",
-    "download_cv": "Baixar CV"
+    "download_cv": "Baixar CV (pt-BR)"
   },
   "projects": {
     "title": "Projetos",

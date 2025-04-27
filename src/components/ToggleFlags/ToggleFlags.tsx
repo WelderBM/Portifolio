@@ -3,7 +3,12 @@ import { DropdownContainer, CircleButton, Dropdown, DropdownItem } from './Toggl
 import { useTranslation } from 'react-i18next';
 import '../../../i18n';
 
-const ToggleFlags: React.FC = () => {
+interface ToggleFlagsProps {
+  selectedFlag: 'EN' | 'BR';
+  setSelectedFlag: (flag: 'EN' | 'BR') => void;
+}
+
+const ToggleFlags: React.FC<ToggleFlagsProps> = ({ selectedFlag, setSelectedFlag }) => {
   const { i18n } = useTranslation();
 
   const changeLanguage = (lng: string) => {
@@ -11,12 +16,11 @@ const ToggleFlags: React.FC = () => {
     handleFlagChange(lng === 'pt' ? 'BR' : 'EN');
   };
 
-  const [selectedFlag, setSelectedFlag] = useState('EN'); // Estado para a bandeira selecionada
   const [isDropdownOpen, setDropdownOpen] = useState(false);
 
   const toggleDropdown = () => setDropdownOpen(!isDropdownOpen);
 
-  const handleFlagChange = (flag: string) => {
+  const handleFlagChange = (flag: 'EN' | 'BR') => {
     setSelectedFlag(flag);
     setDropdownOpen(false);
   };

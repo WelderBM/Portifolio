@@ -4,7 +4,7 @@
     "about": "About",
     "projects": "Projects",
     "contacts": "Contact",
-    "download_cv": "Download Resume"
+    "download_cv": "Download Resume (en-US)"
   },
   "texts": {
     "hello_visitor": "Hello and welcome!",
@@ -16,7 +16,7 @@
     "title": "About Me",
     "description_1": "Hello! I'm Welder, a Front-end Developer with a Technical Degree in Computer Science from IFRR and about 3 years of experience, passionate about creating dynamic and efficient interfaces.",
     "description_2": "Main Technologies",
-    "download_cv": "Download Resume"
+    "download_cv": "Download Resume (en-US)"
   },
   "projects": {
     "title": "Projects",

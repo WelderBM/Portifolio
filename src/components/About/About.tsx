@@ -3,7 +3,11 @@ import programmer from '/programmer.png';
 import ButtonLink from '../DownloadCv/DownloadCv';
 import { useTranslation } from 'react-i18next';
 
-const AboutComponent = () => {
+interface ToggleFlagsProps {
+  selectedFlag: 'EN' | 'BR';
+}
+
+const AboutComponent = ({ selectedFlag }:ToggleFlagsProps) => {
   const { t } = useTranslation();
 
   const languages = {
@@ -42,7 +46,7 @@ const AboutComponent = () => {
             </Button>
           ))}
         </div>
-        <ButtonLink href="/Profile.pdf">{t('about.download_cv')}</ButtonLink>
+        <ButtonLink href={selectedFlag === 'BR' ? '/ProfilePt.pdf' : '/ProfileEng.pdf'}>{t('about.download_cv')}</ButtonLink>
       </Content>
     </About>
   );

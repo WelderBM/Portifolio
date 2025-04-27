@@ -7,9 +7,11 @@ import { useTranslation } from 'react-i18next';
 
 interface HeaderComponentProps {
   themeToggler: () => void;
+  selectedFlag: 'EN' | 'BR';
+  setSelectedFlag: (flag: 'EN' | 'BR') => void;
 }
 
-const HeaderComponent: React.FC<HeaderComponentProps> = ({ themeToggler }) => {
+const HeaderComponent: React.FC<HeaderComponentProps> = ({ themeToggler, selectedFlag, setSelectedFlag }) => {
   const { t } = useTranslation();
   const [scrolled, setScrolled] = useState<boolean>(false);
   const [menuOpen, setMenuOpen] = useState<boolean>(false);
@@ -77,8 +79,8 @@ const HeaderComponent: React.FC<HeaderComponentProps> = ({ themeToggler }) => {
               <li><a href="#contatos">{t('header.contacts')}</a></li>
             </ul>
             <ul className={additionalMenuOpen ? 'open' : ''}>
-              <li><DownloadCv href="/Profile.pdf">{t('header.download_cv')}</DownloadCv></li>
-              <li><ToggleFlags /></li>
+              <li><DownloadCv href={selectedFlag === 'BR' ? '/ProfilePt.pdf' : '/ProfileEng.pdf'}>{t('header.download_cv')}</DownloadCv></li>
+              <li><ToggleFlags selectedFlag={selectedFlag} setSelectedFlag={setSelectedFlag} /></li>
               <li><ThemeSwitcher onClick={themeToggler} /></li>
             </ul>
           </Nav>
@@ -90,8 +92,8 @@ const HeaderComponent: React.FC<HeaderComponentProps> = ({ themeToggler }) => {
               <li><a href="#projetos">{t('header.projects')}</a></li>
               <li><a href="#contatos">{t('header.contacts')}</a></li>
             </ul>
-            <DownloadCv href="/Profile.pdf">{t('header.download_cv')}</DownloadCv>
-            <ToggleFlags />
+            <DownloadCv href={selectedFlag === 'BR' ? '/ProfilePt.pdf' : '/ProfileEng.pdf'}>{t('header.download_cv')}</DownloadCv>
+            <ToggleFlags selectedFlag={selectedFlag} setSelectedFlag={setSelectedFlag} />
             <ThemeSwitcher onClick={themeToggler} />
           </Nav>
         )}
