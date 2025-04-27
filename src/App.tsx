@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import { useInView } from 'react-intersection-observer';
 import './App.css';
 import { ThemeProvider } from 'styled-components';
 import { GlobalStyle } from './GlobalStyles';
