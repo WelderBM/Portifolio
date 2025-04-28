@@ -26,7 +26,7 @@ const ToggleFlags: React.FC<ToggleFlagsProps> = ({ selectedFlag, setSelectedFlag
   };
 
   return (
-    <DropdownContainer>
+    <DropdownContainer aria-label={`Mudar idioma para ${selectedFlag  === 'EN' ? 'português' : 'inglês'}`}>
       <CircleButton onClick={toggleDropdown}>
         {selectedFlag === 'EN' ? (
           <img src="/euaFlag.png" alt="EN" style={{ width: '20px' }} />

@@ -18,10 +18,10 @@ const ContactIcons: React.FC<ContactIconsProps> = ({ theme }) => {
           <a href="https://wa.me/5595991341586" target="_blank" rel="noopener noreferrer">
             <IoLogoWhatsapp size="30px" color={theme === 'light' ? lightTheme.fontColor : darkTheme.fontColor} />
           </a>
-          <a href="https://www.linkedin.com/in/welder-barroso-37b654207/" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.linkedin.com/in/welder-barroso-37b654207/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn de Welder">
             <FaLinkedin size="30px" color={theme === 'light' ? lightTheme.fontColor : darkTheme.fontColor} />
           </a>
-          <a href="https://github.com/WelderBM" target="_blank" rel="noopener noreferrer">
+          <a href="https://github.com/WelderBM" target="_blank" rel="noopener noreferrer" aria-label="GitHub de Welder">
             <FaGithub size="30px" color={theme === 'light' ? lightTheme.fontColor : darkTheme.fontColor} />
           </a>
         </IconContext.Provider>
