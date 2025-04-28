@@ -29,18 +29,18 @@ const ToggleFlags: React.FC<ToggleFlagsProps> = ({ selectedFlag, setSelectedFlag
     <DropdownContainer aria-label={`Mudar idioma para ${selectedFlag  === 'EN' ? 'português' : 'inglês'}`}>
       <CircleButton onClick={toggleDropdown}>
         {selectedFlag === 'EN' ? (
-          <img src="/euaFlag.png" alt="EN" style={{ width: '20px' }} />
+          < img width="20" height="20" src="/euaFlag.webp" alt="EN" style={{ width: '20px' }} loading="lazy"/>
         ) : (
-          <img src="/brasilFlag.png" alt="BR" style={{ width: '20px' }} />
+          < img width="20" height="20" src="/brasilFlag.webp" alt="BR" style={{ width: '20px' }} loading="lazy"/>
         )}
       </CircleButton>
       {isDropdownOpen && (
         <Dropdown>
           <DropdownItem onClick={() => changeLanguage('pt')}>
-            <img src="/brasilFlag.png" alt="BR" style={{ width: '20px', marginRight: '8px' }} /> PT
+            < img width="20" height="20" src="/brasilFlag.webp" alt="BR" style={{ width: '20px', marginRight: '8px' }} loading="lazy"/> PT
           </DropdownItem>
           <DropdownItem onClick={() => changeLanguage('en')}>
-            <img src="/euaFlag.png" alt="EN" style={{ width: '20px', marginRight: '8px' }} /> EN
+            < img width="20" height="20" src="/euaFlag.webp" alt="EN" style={{ width: '20px', marginRight: '8px' }} loading="lazy"/> EN
           </DropdownItem>
         </Dropdown>
       )}

@@ -1,5 +1,5 @@
 import { About, Image, Content, Title, Description, SecondTitle, Button } from './About.styles'; 
-import programmer from '/programmer.png';
+import programmer from '/programmer.webp';
 import ButtonLink from '../DownloadCv/DownloadCv';
 import { useTranslation } from 'react-i18next';
 
@@ -30,7 +30,7 @@ const AboutComponent = ({ selectedFlag }:ToggleFlagsProps) => {
 
   return (
     <About>
-      <Image src={programmer} alt={t('about.image_alt')} />
+      <Image src={programmer} alt={t('about.image_alt')} loading="lazy"/>
       <Content>
         <Title>{t('about.title')}</Title>
         <Description>{t('about.description_1')}</Description>

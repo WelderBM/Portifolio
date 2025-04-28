@@ -1,6 +1,6 @@
 <h1 align="center">Meu Portifolio</h1>
 
-<img src="printScreenPortfolio.png" alt="Meu Portifolio"/>
+< img width="20" height="10" src="printScreenPortfolio.png" alt="Meu Portifolio"/>
 
 <h2 align="center"><a href="https://welderbarroso.netlify.app/">View site</a></h2>
 
@@ -49,5 +49,5 @@
 4. [Vite](https://vitejs.dev/guide/)
 
 <h2 id="pessoas-autoras">Authors</h2> 
-<img alt="my profile picture" src="./perfil-quadrado.JPG" width="200"/>
+< img width="20" height="10" alt="my profile picture" src="./perfil-quadrado.JPG" width="200"/>
 welder barroso

@@ -9,7 +9,7 @@ export const Background = styled.div`
   justify-content: center;
   align-items: center;
 
-  background-image: url('/background.jpg');
+  background-image: url('/background.webp');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -58,7 +58,7 @@ export const BackgroundGeometric = styled.div`
   align-items: center;
   position: relative;
 
-  background-image: url('/backgroundGeometric.png');
+  background-image: url('/backgroundGeometric.webp');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

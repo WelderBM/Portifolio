@@ -21,7 +21,7 @@ const ProjectsCads: React.FC = () => {
 
   const projectData = [
     {
-      imageSrc: "/instagramApp.png",
+      imageSrc: "/instagramApp.webp",
       title: t('projects.instagram_app.title'),
       description: t('projects.instagram_app.description'),
       buttonNames: ["HTML", "CSS", "JavaScript", "React", "Vite", "Yarn"],
@@ -35,7 +35,7 @@ const ProjectsCads: React.FC = () => {
       ],
     },
     {
-      imageSrc: "/burgerApp.png",
+      imageSrc: "/burgerApp.webp",
       title: t('projects.burger_app.title'),
       description: t('projects.burger_app.description'),
       buttonNames: ["HTML", "CSS", "JavaScript", "React", "Vite", "Yarn"],
@@ -49,7 +49,7 @@ const ProjectsCads: React.FC = () => {
       ],
     },
     {
-      imageSrc: "/forecast.png",
+      imageSrc: "/forecast.webp",
       title: t('projects.weather_forecast.title'),
       description: t('projects.weather_forecast.description'),
       buttonNames: ["HTML", "CSS", "JavaScript", "React", "Vite", "Yarn"],
@@ -63,7 +63,7 @@ const ProjectsCads: React.FC = () => {
       ],
     },
     {
-      imageSrc: "/photografy.png",
+      imageSrc: "/photografy.webp",
       title: t('projects.login_fotografia.title'),
       description: t('projects.login_fotografia.description'),
       buttonNames: ["HTML", "CSS", "JavaScript", "React", "Vite", "Yarn"],
@@ -77,7 +77,7 @@ const ProjectsCads: React.FC = () => {
       ],
     },
     {
-      imageSrc: "/darkLogin.png",
+      imageSrc: "/darkLogin.webp",
       title: t('projects.login_dark.title'),
       description: t('projects.login_dark.description'),
       buttonNames: ["HTML", "CSS"],
@@ -87,7 +87,7 @@ const ProjectsCads: React.FC = () => {
       ],
     },
     {
-      imageSrc: "/skullPage.png",
+      imageSrc: "/skullPage.webp",
       title: t('projects.landing_halloween.title'),
       description: t('projects.landing_halloween.description'),
       buttonNames: ["HTML", "CSS", "JavaScript", "React", "Vite", "Yarn"],
@@ -101,7 +101,7 @@ const ProjectsCads: React.FC = () => {
       ],
     },
     {
-      imageSrc: "/blackAndWhite.png",
+      imageSrc: "/blackAndWhite.webp",
       title: t('projects.login_black_white.title'),
       description: t('projects.login_black_white.description'),
       buttonNames: ["HTML", "CSS", "JavaScript"],
@@ -112,7 +112,7 @@ const ProjectsCads: React.FC = () => {
       ],
     },
     {
-      imageSrc: "/bakery.png",
+      imageSrc: "/bakery.webp",
       title: t('projects.landing_padaria.title'),
       description: t('projects.landing_padaria.description'),
       buttonNames: ["HTML", "CSS", "JavaScript"],

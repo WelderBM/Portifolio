@@ -29,7 +29,7 @@ const Card: React.FC<ProjectCardsProps> = ({ imageSrc, title, description, butto
       )}
     
       <CardContainer onClick={handleImageClick}>
-        <Image src={imageSrc} alt="Project" style={{ cursor: 'pointer' }} />
+        <Image src={imageSrc} alt="Project" style={{ cursor: 'pointer' }} loading="lazy"/>
         <ButtonContainer>
           {buttonNames.map((name, index) => (
             <Button key={index} color={buttonColors[index]}>
