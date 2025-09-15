@@ -1,6 +1,6 @@
 <h1 align="center">Meu Portifolio</h1>
 
-< img width="20" height="10" src="printScreenPortfolio.png" alt="Meu Portifolio"/>
+<img width="500" height="700" align="center" src="printScreenPortfolio.png" alt="Meu Portifolio"/>
 
 <h2 align="center"><a href="https://welderbarroso.netlify.app/">View site</a></h2>
 
