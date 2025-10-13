@@ -27,7 +27,7 @@ export const Slider = styled.div`
   display: flex;
   align-items: center;
   gap: 50px;
-  animation: ${slide} 20s linear infinite;
+  animation: ${slide} 40s linear infinite;
   animation-play-state: running;
 `;
 
