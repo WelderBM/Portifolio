@@ -3,8 +3,9 @@ import styled from 'styled-components';
 export const CardContainer = styled.div`
   background: linear-gradient(135deg, ${props => props.theme.body}, ${props => props.theme.backgroundColor}); /* Linear gradient em 135 graus com duas cores */
   border-radius: 20px;
-  width: 300px;
+  width: 340px;
   height: 500px;
+  justify-self: center;
   text-align: center;
   margin: 20px;
   position: relative;
