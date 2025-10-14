@@ -52,6 +52,14 @@
     "landing_padaria": {
       "title": "Bakery Landing Page",
       "description": "A site designed to refine my styling skills, with an email sending API implementation."
+    },
+    "senaigame": {
+      "title": "Senai Game Activity",
+      "description": "A project developed during a Senai course, focusing on HTML, CSS, and JavaScript skills."
+    },
+    "barbearia": {
+      "title": "Barbershop Landing Page",
+      "description": "A landing page for a barbershop, created to enhance my design and layout skills."
     }
   }
 }

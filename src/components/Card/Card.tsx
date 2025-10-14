@@ -19,6 +19,7 @@ interface ProjectCardsProps {
   buttonNames: string[];
   buttonColors: string[];
   theme: string;
+  linkDeploy: string;
 }
 
 const Card: React.FC<ProjectCardsProps> = ({
@@ -28,10 +29,11 @@ const Card: React.FC<ProjectCardsProps> = ({
   buttonNames,
   buttonColors,
   theme,
+  linkDeploy
 }) => {
   return (
     <IconContext.Provider value={{ className: "contactIcon" }}>
-      <CardContainer>
+      <CardContainer onClick={() => { window.location.href = linkDeploy; }}>
         <Image
           src={imageSrc}
           alt="Project"
