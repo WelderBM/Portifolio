@@ -78,27 +78,22 @@ export const Description = styled.p`
   }
 `;
 
-export const Overlay = styled.div`
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, 0.7);
+export const LinkBox = styled.div`
+  border-radius: 50%;
+  padding: 0.5rem;
+  position: absolute;
   display: flex;
-  justify-content: center;
   align-items: center;
-  z-index: 10;
-`;
+  justify-content: center;
+  right: 1rem;
+  bottom: 1rem;
+  z-index: 2;
+  overflow: hidden;
+  cursor: pointer;
 
-export const EnlargedImage = styled.img`
-  max-width: 80%;
-  max-height: 80%;
-  object-fit: cover;
-  border-radius: 10px;
+  transition: transform 0.3s ease; /* Somente transição para a escala */
 
-  @media (max-width: 768px) {
-    max-width: 90%; /* Ajusta a largura máxima em telas menores */
-    max-height: 90%; /* Ajusta a altura máxima em telas menores */
+  &:hover {
+    transform: scale(1.05); /* Mantém o efeito de zoom ao passar o mouse */
   }
 `;

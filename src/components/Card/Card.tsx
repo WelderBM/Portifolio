@@ -1,5 +1,16 @@
-import React, { useState } from 'react';
-import { CardContainer, Image, ButtonContainer, Button, Title, Description, Overlay, EnlargedImage } from './Card.styles';
+import React from "react";
+import {
+  CardContainer,
+  Image,
+  ButtonContainer,
+  Button,
+  Title,
+  Description,
+  LinkBox,
+} from "./Card.styles";
+import { FaExternalLinkAlt } from "react-icons/fa";
+import { IconContext } from "react-icons";
+import { darkTheme, lightTheme } from '../../theme';
 
 interface ProjectCardsProps {
   imageSrc: string;
@@ -7,29 +18,26 @@ interface ProjectCardsProps {
   description: string;
   buttonNames: string[];
   buttonColors: string[];
+  theme: string;
 }
 
-const Card: React.FC<ProjectCardsProps> = ({ imageSrc, title, description, buttonNames, buttonColors }) => {
-  const [isOpen, setIsOpen] = useState(false);
-
-  const handleImageClick = () => {
-    setIsOpen(true);
-  };
-
-  const handleOverlayClick = () => {
-    setIsOpen(false);
-  };
-
+const Card: React.FC<ProjectCardsProps> = ({
+  imageSrc,
+  title,
+  description,
+  buttonNames,
+  buttonColors,
+  theme,
+}) => {
   return (
-    <>
-      {isOpen && (
-        <Overlay onClick={handleOverlayClick}>
-          <EnlargedImage src={imageSrc} alt="Enlarged Project" />
-        </Overlay>
-      )}
-    
-      <CardContainer onClick={handleImageClick}>
-        <Image src={imageSrc} alt="Project" style={{ cursor: 'pointer' }} loading="lazy"/>
+    <IconContext.Provider value={{ className: "contactIcon" }}>
+      <CardContainer>
+        <Image
+          src={imageSrc}
+          alt="Project"
+          style={{ cursor: "pointer" }}
+          loading="lazy"
+        />
         <ButtonContainer>
           {buttonNames.map((name, index) => (
             <Button key={index} color={buttonColors[index]}>
@@ -39,8 +47,15 @@ const Card: React.FC<ProjectCardsProps> = ({ imageSrc, title, description, butto
         </ButtonContainer>
         <Title>{title}</Title>
         <Description>{description}</Description>
+        <LinkBox className="link">
+          <FaExternalLinkAlt
+            color={
+              theme === "light" ? lightTheme.fontColor : darkTheme.fontColor
+            }
+          ></FaExternalLinkAlt>
+        </LinkBox>
       </CardContainer>
-    </>
+    </IconContext.Provider>
   );
 };
 
