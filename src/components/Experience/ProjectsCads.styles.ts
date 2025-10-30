@@ -13,8 +13,7 @@ export const Container = styled.section`
 
 export const Header = styled.div`
   text-align: center;
-  margin-top: 70px;
-  padding: 60px 40px;
+  padding: 40px;
   border-radius: 20px;
   position: relative;
   overflow: hidden;

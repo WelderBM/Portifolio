@@ -90,6 +90,7 @@ const HeaderComponent: React.FC<HeaderComponentProps> = ({ themeToggler, selecte
               <li><a href="#inicio">{t('header.start')}</a></li>
               <li><a href="#sobre">{t('header.about')}</a></li>
               <li><a href="#projetos">{t('header.projects')}</a></li>
+              <li><a href="#experiencia">{t('header.experience')}</a></li>
               <li><a href="#contatos">{t('header.contacts')}</a></li>
             </ul>
             <DownloadCv href={selectedFlag === 'BR' ? '/ProfilePt.pdf' : '/ProfileEng.pdf'}>{t('header.download_cv')}</DownloadCv>
