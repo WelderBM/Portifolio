@@ -70,6 +70,9 @@
     },
     "pigz": {
       "web": {
+        "title": "Frontend Developer",
+        "subtitle": "Web Development",
+        "period": "Apr 2025 – Jun 2025",
         "description": "Development and maintenance of critical web applications for the business, utilizing React.js, Next.js, and TypeScript, for systems like Pigz Comanda, Pigz Kiosk, and Pigz Desktop Management. Focused on delivering robust and performant solutions.",
         "highlights": [
           "Technical leadership in resolving critical production hotfixes, ensuring rapid recovery and operational continuity of the platform, minimizing impact on users and business.",
@@ -80,6 +83,9 @@
         ]
       },
       "mobile": {
+        "title": "Mobile Developer",
+        "subtitle": "React Native",
+        "period": "Feb 2025 – Apr 2025",
         "description": "Development of robust mobile applications using React Native, with a focus on performance, scalability, and an excellent user experience on both iOS and Android devices.",
         "highlights": [
           "Implemented complex functionalities with React Native and TypeScript, ensuring clean, maintainable code adhering to market standards.",
@@ -92,6 +98,9 @@
     },
     "r2t": {
       "junior": {
+        "title": "Junior Frontend Developer",
+        "subtitle": "Web Development",
+        "period": "Jul 2022 – Dec 2022",
         "description": "Acted as a Junior Frontend Developer, focused on building dynamic and responsive web systems with React.js, Next.js, and JavaScript, prioritizing responsiveness, accessibility, and usability for the end-user.",
         "highlights": [
           "Led the upgrade of a project to the latest version of Next.js, resulting in significant performance improvements, validated by Google Lighthouse metrics.",
@@ -102,6 +111,9 @@
         ]
       },
       "intern": {
+        "title": "Frontend Development Intern",
+        "subtitle": "Web Development",
+        "period": "Feb 2022 – Jul 2022",
         "description": "Began career as a Frontend Development Intern, with a focus on practical learning in React, building reusable components, and applying web development best practices.",
         "highlights": [
           "Developed reusable React components with HTML5 and CSS3, following design patterns and ensuring application visual consistency.",

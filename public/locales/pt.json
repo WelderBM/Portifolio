@@ -62,13 +62,16 @@
       "title": "Landing Page Barbearia",
       "description": "Uma landing page para uma barbearia, criada para aprimorar minhas habilidades de design e layout."
     }
-  }, "experience": {
+  },  "experience": {
       "section": {
         "title": "Experiência Profissional",
         "subtitle": "Minha trajetória em desenvolvimento front-end, focada em construir interfaces web e mobile escaláveis e de alta performance. Experiência em liderança técnica, otimização e user experience."
       },
       "pigz": {
         "web": {
+          "title": "Desenvolvedor Frontend",
+          "subtitle": "Desenvolvimento Web",
+          "period": "Abr 2025 – Jun 2025",
           "description": "Desenvolvimento e manutenção de aplicações web críticas para o negócio, utilizando React.js, Next.js e TypeScript, para sistemas como Pigz Comanda, Pigz Kiosk e Pigz Desktop Management. Foco na entrega de soluções robustas e performáticas.",
           "highlights": [
             "Liderança técnica na resolução de hotfixes críticos de produção, garantindo rápida recuperação e continuidade operacional da plataforma, minimizando impactos para usuários e negócios.",
@@ -79,6 +82,9 @@
           ]
         },
         "mobile": {
+          "title": "Desenvolvedor Mobile",
+          "subtitle": "React Native",
+          "period": "Fev 2025 – Abr 2025",
           "description": "Desenvolvimento de aplicações mobile robustas utilizando React Native, com foco em performance, escalabilidade e uma excelente experiência do usuário em dispositivos iOS e Android.",
           "highlights": [
             "Implementação de funcionalidades complexas com React Native e TypeScript, garantindo código limpo, manutenível e aderente aos padrões de mercado.",
@@ -91,6 +97,9 @@
       },
       "r2t": {
         "junior": {
+          "title": "Desenvolvedor Frontend Júnior",
+          "subtitle": "Desenvolvimento Web",
+          "period": "Jul 2022 – Dez 2022",
           "description": "Atuação como Desenvolvedor Front-end Júnior, focado na construção de sistemas web dinâmicos e responsivos com React.js, Next.js e JavaScript, priorizando responsividade, acessibilidade e usabilidade para o usuário final.",
           "highlights": [
             "Condução da atualização de um projeto para a versão mais recente do Next.js, resultando em melhorias significativas de desempenho, validadas por métricas do Google Lighthouse.",
@@ -101,6 +110,9 @@
           ]
         },
         "intern": {
+          "title": "Estagiário de Desenvolvimento Frontend",
+          "subtitle": "Desenvolvimento Web",
+          "period": "Fev 2022 – Jul 2022",
           "description": "Início da carreira como Estagiário de Desenvolvimento Front-end, com foco em aprendizado prático em React, construção de componentes reutilizáveis e aplicação de boas práticas de desenvolvimento web.",
           "highlights": [
             "Desenvolvimento de componentes React reutilizáveis com HTML5 e CSS3, seguindo padrões de design e garantindo a consistência visual da aplicação.",

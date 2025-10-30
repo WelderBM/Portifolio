@@ -22,9 +22,9 @@ import {
 import { useTranslation } from "react-i18next";
 
 interface ExperienceRole {
-  title: string;
-  subtitle?: string;
-  period: string;
+  titleKey: string;
+  subtitleKey: string;
+  periodKey: string;
   descriptionKey: string;
   highlightsKey: string;
   techs: string[];
@@ -74,9 +74,9 @@ const Experience: React.FC = () => {
       dataKey: "pigz",
       roles: [
         {
-          title: "Frontend Developer",
-          subtitle: "Web Development",
-          period: "Fev 2025 – Jun 2025",
+          titleKey: "experience.pigz.web.title",
+          subtitleKey: "experience.pigz.web.subtitle",
+          periodKey: "experience.pigz.web.period",
           descriptionKey: "experience.pigz.web.description",
           highlightsKey: "experience.pigz.web.highlights",
           techs: [
@@ -95,9 +95,9 @@ const Experience: React.FC = () => {
           ],
         },
         {
-          title: "Mobile Developer",
-          subtitle: "React Native",
-          period: "Fev 2025 – Jun 2025",
+          titleKey: "experience.pigz.mobile.title",
+          subtitleKey: "experience.pigz.mobile.subtitle",
+          periodKey: "experience.pigz.mobile.period",
           descriptionKey: "experience.pigz.mobile.description",
           highlightsKey: "experience.pigz.mobile.highlights",
           techs: [
@@ -120,9 +120,9 @@ const Experience: React.FC = () => {
       dataKey: "r2t",
       roles: [
         {
-          title: "Junior Frontend Developer",
-          subtitle: "Web Development",
-          period: "Ago 2022 – Dez 2022",
+          titleKey: "experience.r2t.junior.title",
+          subtitleKey: "experience.r2t.junior.subtitle",
+          periodKey: "experience.r2t.junior.period",
           descriptionKey: "experience.r2t.junior.description",
           highlightsKey: "experience.r2t.junior.highlights",
           techs: [
@@ -139,9 +139,9 @@ const Experience: React.FC = () => {
           ],
         },
         {
-          title: "Intern Frontend Developer",
-          subtitle: "Web Development",
-          period: "Fev 2022 – Jul 2022",
+          titleKey: "experience.r2t.intern.title",
+          subtitleKey: "experience.r2t.intern.subtitle",
+          periodKey: "experience.r2t.intern.period",
           descriptionKey: "experience.r2t.intern.description",
           highlightsKey: "experience.r2t.intern.highlights",
           techs: [
@@ -178,13 +178,11 @@ const Experience: React.FC = () => {
                 <div key={`${exp.company}-${roleIndex}`}>
                   <RoleContainer>
                     <div>
-                      <RoleTitle>{role.title}</RoleTitle>
-                      {role.subtitle && (
-                        <RoleSubtitle>{role.subtitle}</RoleSubtitle>
-                      )}
+                      <RoleTitle>{t(role.titleKey)}</RoleTitle>
+                      <RoleSubtitle>{t(role.subtitleKey)}</RoleSubtitle>
                     </div>
                     <div style={{ textAlign: "right" }}>
-                      <Period>{role.period}</Period>
+                      <Period>{t(role.periodKey)}</Period>
                     </div>
                   </RoleContainer>
 
