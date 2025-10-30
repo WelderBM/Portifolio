@@ -14,7 +14,7 @@ export const Container = styled.div`
 
 export const Title = styled.h3`
   color: ${props => props.theme.fontColor};
-  font-size: 72px;
+  font-size: 60px;
   font-weight: 600;
   font-family: 'Montserrat';
   margin-top: 70px;

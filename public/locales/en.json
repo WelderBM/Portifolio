@@ -14,7 +14,7 @@
   "about": {
     "image_alt": "cartoon of a programmer",
     "title": "About Me",
-    "description_1": "Hello! I'm Welder, a Front-end Developer with a Technical Degree in Computer Science from IFRR and about 3 years of experience, passionate about creating dynamic and efficient interfaces.",
+    "description_1": "Hello, I’m Welder Barroso — Front-End Developer, Technical degree in Computer Science from IFRR, with approximately three years of experience in web environments. I specialize in JavaScript and TypeScript, leveraging React and Next.js to turn ideas into elegant, high-performance user interfaces. I’m passionate about building dynamic and efficient experiences that combine clean code, thoughtful UI/UX and business-driven outcomes.",
     "description_2": "Main Technologies",
     "download_cv": "Download Resume (en-US)"
   },
@@ -60,6 +60,56 @@
     "barbearia": {
       "title": "Barbershop Landing Page",
       "description": "A landing page for a barbershop, created to enhance my design and layout skills."
+    }
+  },
+  "experience": {
+    "section": {
+      "title": "Professional Experience",
+      "subtitle": "My journey in front-end development, focused on building scalable and high-performance web and mobile interfaces. Experienced in technical leadership, optimization, and user experience."
+    },
+    "pigz": {
+      "web": {
+        "description": "Development and maintenance of critical web applications for the business, utilizing React.js, Next.js, and TypeScript, for systems like Pigz Comanda, Pigz Kiosk, and Pigz Desktop Management. Focused on delivering robust and performant solutions.",
+        "highlights": [
+          "Technical leadership in resolving critical production hotfixes, ensuring rapid recovery and operational continuity of the platform, minimizing impact on users and business.",
+          "Recognized for autonomy and accelerated adaptation to new technologies, such as Redux and Context API, being one of the team members with the best initial learning curve.",
+          "Active participation in Scrum ceremonies (Daily, Sprint Review), utilizing Jira and Google Workspace, contributing to daily deployments and an agile and efficient workflow.",
+          "Continuous contribution to code reviews, technical documentation, and version control via GitHub, ensuring the quality, scalability, and maintainability of the codebase.",
+          "Implemented performance optimizations in complex dashboards and management interfaces, resulting in faster loading times and improved usability for clients and collaborators."
+        ]
+      },
+      "mobile": {
+        "description": "Development of robust mobile applications using React Native, with a focus on performance, scalability, and an excellent user experience on both iOS and Android devices.",
+        "highlights": [
+          "Implemented complex functionalities with React Native and TypeScript, ensuring clean, maintainable code adhering to market standards.",
+          "Managed robust state using Redux, improving application maintainability and predictability in highly complex scenarios.",
+          "Actively participated in code reviews, promoting high-quality code standards, technical collaboration, and the dissemination of mobile development best practices.",
+          "Optimized performance and user experience in critical mobile applications for the business, resulting in increased user engagement and satisfaction.",
+          "Efficiently integrated RESTful APIs and third-party services to expand mobile application capabilities, ensuring seamless connectivity and functionality."
+        ]
+      }
+    },
+    "r2t": {
+      "junior": {
+        "description": "Acted as a Junior Frontend Developer, focused on building dynamic and responsive web systems with React.js, Next.js, and JavaScript, prioritizing responsiveness, accessibility, and usability for the end-user.",
+        "highlights": [
+          "Led the upgrade of a project to the latest version of Next.js, resulting in significant performance improvements, validated by Google Lighthouse metrics.",
+          "Received internal recognition as a Next.js reference, leading a high-visibility and strategic impact project, contributing to the company's technological evolution.",
+          "Directly collaborated with designers on visual architecture and UI/UX optimization, ensuring design fidelity and continuous refinement of the final product.",
+          "Implemented Storybook for component documentation and definition of component systems, aiming for effective frontend scalability and maintenance.",
+          "Mentored interns, sharing knowledge on development best practices, design patterns, and agile methodologies, contributing to team growth."
+        ]
+      },
+      "intern": {
+        "description": "Began career as a Frontend Development Intern, with a focus on practical learning in React, building reusable components, and applying web development best practices.",
+        "highlights": [
+          "Developed reusable React components with HTML5 and CSS3, following design patterns and ensuring application visual consistency.",
+          "Actively collaborated with the design team, using tools like Figma, to ensure faithful interface implementation and enhance user experience.",
+          "Participated in Scrum ceremonies and learned agile development methodologies, contributing to a continuous and collaborative delivery cycle.",
+          "Actively participated in critical Git rollback operations, demonstrating pragmatism and problem-solving capabilities in production environments.",
+          "Contributed to the maintenance and refactoring of legacy code, applying principles of clean code, modularity, and scalability for codebase modernization."
+        ]
+      }
     }
   }
 }

@@ -14,6 +14,7 @@ import About from './components/About/About';
 import ProjectsCads from './components/ProjectsCads/ProjectsCads';
 import WhatsAppPopup from './components/WhatsAppPopup/WhatsAppPopup';
 import Footer from './components/Footer/Footer';
+import Experience from './components/Experience/ProjectsCads';
 
 function App() {
 
@@ -45,6 +46,7 @@ function App() {
         <BackgroundBack id='projetos'>
           <ProjectsCads />
         </BackgroundBack>
+        <Experience/>
         <Footer id='contatos' theme={theme} />
     </ThemeProvider>
   );

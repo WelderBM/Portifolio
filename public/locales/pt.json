@@ -14,7 +14,7 @@
   "about": {
     "image_alt": "cartoon de um programador",
     "title": "Sobre Mim",
-    "description_1": "Olá! Eu sou Welder, Desenvolvedor Front-end Técnico em Informática pelo IFRR com mais ou menos 3 anos de experiência, apaixonado por criar interfaces dinâmicas e eficientes.",
+    "description_1": "Olá, sou Welder Barroso — Desenvolvedor Front-end, Técnico em Informática pelo IFRR, com cerca de 4 anos de experiência em ambientes web. Especializo-me em JavaScript e TypeScript, e utilizo frameworks como React e Next.js para transformar ideias em interfaces elegantes, performáticas e centradas no usuário. Tenho paixão por construir experiências dinâmicas e eficientes que aliam código limpo, UI/UX bem pensada e resultados de negócio.",
     "description_2": "Principais tecnologias",
     "download_cv": "Baixar CV (pt-BR)"
   },
@@ -61,5 +61,54 @@
       "title": "Landing Page Barbearia",
       "description": "Uma landing page para uma barbearia, criada para aprimorar minhas habilidades de design e layout."
     }
-  }
+  }, "experience": {
+      "section": {
+        "title": "Experiência Profissional",
+        "subtitle": "Minha trajetória em desenvolvimento front-end, focada em construir interfaces web e mobile escaláveis e de alta performance. Experiência em liderança técnica, otimização e user experience."
+      },
+      "pigz": {
+        "web": {
+          "description": "Desenvolvimento e manutenção de aplicações web críticas para o negócio, utilizando React.js, Next.js e TypeScript, para sistemas como Pigz Comanda, Pigz Kiosk e Pigz Desktop Management. Foco na entrega de soluções robustas e performáticas.",
+          "highlights": [
+            "Liderança técnica na resolução de hotfixes críticos de produção, garantindo rápida recuperação e continuidade operacional da plataforma, minimizando impactos para usuários e negócios.",
+            "Reconhecido pela autonomia e adaptação acelerada a novas tecnologias, como Redux e Context API, sendo um dos membros da equipe com a melhor curva de aprendizado inicial.",
+            "Participação ativa em cerimônias Scrum (Daily, Sprint Review), utilizando Jira e Google Workspace, contribuindo para implantações diárias e um fluxo de trabalho ágil e eficiente.",
+            "Contribuição contínua para revisões de código, documentação técnica e controle de versão via GitHub, assegurando a qualidade, escalabilidade e manutenibilidade da base de código.",
+            "Implementação de otimizações de performance em dashboards e interfaces de gestão complexas, resultando em carregamento mais rápido e melhor usabilidade para clientes e colaboradores."
+          ]
+        },
+        "mobile": {
+          "description": "Desenvolvimento de aplicações mobile robustas utilizando React Native, com foco em performance, escalabilidade e uma excelente experiência do usuário em dispositivos iOS e Android.",
+          "highlights": [
+            "Implementação de funcionalidades complexas com React Native e TypeScript, garantindo código limpo, manutenível e aderente aos padrões de mercado.",
+            "Gerenciamento de estado robusto utilizando Redux, melhorando a manutenibilidade e previsibilidade da aplicação em cenários de alta complexidade.",
+            "Participação ativa em code reviews, promovendo padrões de código de alta qualidade, colaboração técnica e disseminação de melhores práticas de desenvolvimento mobile.",
+            "Otimização de performance e experiência do usuário em aplicações mobile críticas para o negócio, resultando em maior engajamento e satisfação dos usuários.",
+            "Integração eficiente de APIs RESTful e serviços de terceiros para expandir as capacidades das aplicações móveis, garantindo conectividade e funcionalidade."
+          ]
+        }
+      },
+      "r2t": {
+        "junior": {
+          "description": "Atuação como Desenvolvedor Front-end Júnior, focado na construção de sistemas web dinâmicos e responsivos com React.js, Next.js e JavaScript, priorizando responsividade, acessibilidade e usabilidade para o usuário final.",
+          "highlights": [
+            "Condução da atualização de um projeto para a versão mais recente do Next.js, resultando em melhorias significativas de desempenho, validadas por métricas do Google Lighthouse.",
+            "Recebeu reconhecimento interno como referência em Next.js, liderando um projeto de alta visibilidade e impacto estratégico, contribuindo para a evolução tecnológica da empresa.",
+            "Colaboração direta com designers na arquitetura visual e otimização de UI/UX, garantindo a fidelidade ao design e o refinamento contínuo do produto final.",
+            "Implementação do Storybook para documentação de componentes e definição de sistemas de componentes, visando escalabilidade e manutenção eficaz do frontend.",
+            "Mentoria de estagiários, compartilhando conhecimentos sobre melhores práticas de desenvolvimento, padrões de projeto e metodologias ágeis, contribuindo para o crescimento da equipe."
+          ]
+        },
+        "intern": {
+          "description": "Início da carreira como Estagiário de Desenvolvimento Front-end, com foco em aprendizado prático em React, construção de componentes reutilizáveis e aplicação de boas práticas de desenvolvimento web.",
+          "highlights": [
+            "Desenvolvimento de componentes React reutilizáveis com HTML5 e CSS3, seguindo padrões de design e garantindo a consistência visual da aplicação.",
+            "Colaboração ativa com o time de design, utilizando ferramentas como Figma, para garantir a implementação fiel de interfaces e aprimorar a experiência do usuário.",
+            "Participação em cerimônias Scrum e aprendizado de metodologias ágeis de desenvolvimento, contribuindo para um ciclo de entrega contínuo e colaborativo.",
+            "Participação ativa em operações críticas de rollback via Git, demonstrando pragmatismo e capacidade de resolução de problemas em ambientes de produção.",
+            "Contribuição na manutenção e refatoração de código legacy, aplicando princípios de código limpo, modularidade e escalabilidade para modernização da base de código."
+          ]
+        }
+      }
+    }
 }

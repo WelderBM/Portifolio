@@ -11,20 +11,18 @@ const AboutComponent = ({ selectedFlag }:ToggleFlagsProps) => {
   const { t } = useTranslation();
 
   const languages = {
-    buttonNames: ["JavaScript", "Typescript", "React", "Next.js", "Vite"],
+    buttonNames: ["JavaScript", "Typescript", "React", "Next.js"],
     buttonColors: [
       "#F7DF1E",  
       "#3178C6",  
       "#61DAFB",  
-      "#000000",  
-      "#646CFF"   
+      "#000000",
     ],
     fontColors: [
       "#000000",
       "#FFFFFF",
       "#000000",
       "#FFFFFF",
-      "#000000"
     ]
   };
 
