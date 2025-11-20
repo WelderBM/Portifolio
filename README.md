@@ -31,17 +31,13 @@
     $ git clone linkrepo
 
     # Access the project folder in your terminal
-    $ cd instagram-app
+    $ cd Portifolio
 
     # Install the dependencies
     $ npm install
-    # or
-    $ yarn
 
     # Run the application
     $ npm run dev
-    # or
-    $ yarn dev
 ```
 <h2 id="tecnologias-ultilizadas">Technologies used</h2> 
 
