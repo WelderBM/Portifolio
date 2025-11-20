@@ -21,6 +21,7 @@ import ProjectsCads from "./components/ProjectsCads/ProjectsCads";
 import WhatsAppPopup from "./components/WhatsAppPopup/WhatsAppPopup";
 import Footer from "./components/Footer/Footer";
 import Experience from "./components/Experience/ProjectsCads";
+import Education from "./components/Education/Education";
 
 function App() {
   const [theme, setTheme] = useState("dark");
@@ -53,6 +54,9 @@ function App() {
       </BackgroundGeometric>
       <BackgroundBack id="projetos">
         <ProjectsCads />
+      </BackgroundBack>
+      <BackgroundBack id="formacao">
+        <Education />
       </BackgroundBack>
       <BackgroundBack id="experiencia">
         <Experience />
