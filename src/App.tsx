@@ -25,7 +25,7 @@ import Education from "./components/Education/Education";
 
 function App() {
   const [theme, setTheme] = useState("dark");
-  const [selectedFlag, setSelectedFlag] = useState<"EN" | "BR">("EN");
+  const [selectedFlag, setSelectedFlag] = useState<"EN" | "BR">("BR");
 
   const themeToggler = () => {
     return theme === "light" ? setTheme("dark") : setTheme("light");

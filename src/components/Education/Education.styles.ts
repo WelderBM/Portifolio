@@ -133,6 +133,7 @@ export const CardContent = styled.div`
 `;
 
 export const CardImage = styled.img`
+  border: 1px solid ${(props) => props.theme.fontColor};
   width: 200px;
   height: 200px;
   object-fit: cover;
@@ -236,6 +237,7 @@ export const Description = styled.p`
 `;
 
 export const EducationLevel = styled.p`
+  text-align: center;
   font-size: 18px;
   font-weight: 600;
   color: ${(props) => props.theme.fontColor};

@@ -15,7 +15,7 @@ i18n
         translation: enTranslation
       }
     },
-    lng: 'en', // Define a língua padrão
+    lng: 'pt', // Define a língua padrão
     fallbackLng: 'pt',
     interpolation: {
       escapeValue: false // React já escapa a saída

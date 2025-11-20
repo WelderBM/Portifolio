@@ -133,6 +133,7 @@ export const CardContent = styled.div`
 `;
 
 export const CardImage = styled.img`
+  border: 1px solid ${(props) => props.theme.fontColor};
   width: 200px;
   height: 200px;
   object-fit: cover;
@@ -178,6 +179,7 @@ export const RoleContainer = styled.div`
 `;
 
 export const RoleTitle = styled.h3`
+  text-align: center;
   font-size: 24px;
   font-weight: 600;
   color: ${(props) => props.theme.fontColor};
@@ -282,7 +284,8 @@ export const TechList = styled.div`
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
-  margin-top: 16px;`;
+  margin-top: 16px;
+`;
 
 interface TechTagProps {
   $bgColor: string;
