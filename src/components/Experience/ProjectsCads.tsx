@@ -145,13 +145,13 @@ const Experience: React.FC = () => {
           descriptionKey: "experience.r2t.intern.description",
           highlightsKey: "experience.r2t.intern.highlights",
           techs: [
-            "React",
-            "JavaScript",
             "HTML5",
             "CSS3",
+            "JavaScript",
             "Git",
             "GitHub",
-            "Storybook",
+            "React",
+            "Next.js",
             "Figma",
           ],
         },
@@ -189,18 +189,21 @@ const Experience: React.FC = () => {
                   <Paragraph>{t(role.descriptionKey)}</Paragraph>
 
                   <HighlightsList>
-                    {Array.isArray(t(role.highlightsKey, { returnObjects: true })) &&
-                      (t(role.highlightsKey, {
-                        returnObjects: true,
-                      }) as string[]).map((highlight, idx) => (
-                        <HighlightItem key={idx}>
-                          • {highlight}
-                        </HighlightItem>
+                    {Array.isArray(
+                      t(role.highlightsKey, { returnObjects: true })
+                    ) &&
+                      (
+                        t(role.highlightsKey, {
+                          returnObjects: true,
+                        }) as string[]
+                      ).map((highlight, idx) => (
+                        <HighlightItem key={idx}>• {highlight}</HighlightItem>
                       ))}
                   </HighlightsList>
 
                   <UsedTech>
-                    {t("experience.section.title") === "Experiência Profissional"
+                    {t("experience.section.title") ===
+                    "Experiência Profissional"
                       ? "Tecnologias utilizadas:"
                       : "Technologies used:"}
                   </UsedTech>
@@ -223,8 +226,10 @@ const Experience: React.FC = () => {
                 </div>
               ))}
             </div>
-
-            <CardImage src={exp.image} alt={`${exp.company} logo`} />
+            <div style={{ flex: 0 }}>
+              <CardImage src={exp.image} alt={`${exp.company} logo`} />
+              <RoleTitle>{exp.company}</RoleTitle>
+            </div>
           </CardContent>
         </ExperienceCard>
       ))}
