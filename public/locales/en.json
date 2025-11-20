@@ -124,5 +124,86 @@
         ]
       }
     }
+  },
+  "education": {
+    "section": {
+      "title": "Education",
+      "subtitle": "My academic background and professional certifications"
+    },
+    "ifrr": {
+      "technical": {
+        "title": "Technical Course in Informatics",
+        "subtitle": "Integrated with High School",
+        "period": "2019 - 2021",
+        "description": "Solid foundation in computer science fundamentals, programming logic, and software development principles. Developed practical skills in programming and understanding of system architecture.",
+        "certifications": [
+          "Programming Fundamentals",
+          "Programming Logic",
+          "Computer Architecture",
+          "Computer Networks",
+          "Databases"
+        ]
+      }
+    },
+    "cubos": {
+      "backend": {
+        "title": "Certified Backend Developer",
+        "subtitle": "Cubos Academy",
+        "period": "2023",
+        "description": "Professional certification in backend development focusing on JavaScript/Node.js. Acquired in-depth knowledge of API architecture, databases, and full-stack development best practices.",
+        "certifications": [
+          "Node.js Development",
+          "RESTful API Architecture",
+          "SQL and NoSQL Databases",
+          "Authentication and Authorization",
+          "Development Best Practices"
+        ]
+      }
+    },
+    "senai": {
+      "frontend": {
+        "title": "Professional Course in Frontend Web Programming",
+        "subtitle": "SENAI - National Service of Industrial Learning",
+        "period": "2025",
+        "description": "Specialization in modern frontend development with React, Next.js, and TypeScript. Deepened knowledge in creating responsive interfaces, performance optimization, and best practices with current frameworks.",
+        "certifications": [
+          "React and React Hooks",
+          "Next.js and SSR/SSG",
+          "Advanced TypeScript",
+          "Styled Components and TailwindCSS",
+          "Performance Optimization and SEO"
+        ]
+      }
+    },
+    "senac": {
+      "english": {
+        "title": "English Course",
+        "subtitle": "SENAC - National Commercial Learning Service",
+        "period": "2019 - Ongoing",
+        "description": "Continuous development of English language proficiency, essential for a software development career. Participating in regular classes to improve technical communication and comprehension in English.",
+        "certifications": [
+          "Technical Programming Vocabulary",
+          "Professional Communication",
+          "Technical Documentation Reading",
+          "Listening Comprehension"
+        ]
+      }
+    },
+    "devclub": {
+      "fullstack": {
+        "title": "Full Stack JavaScript Formation",
+        "subtitle": "Professional Web Development",
+        "period": "2022",
+        "description": "Complete full stack development training focused on JavaScript. Acquired practical skills in front-end and back-end development, with over 10 portfolio projects and 80+ hours of practical content. Formation that goes from zero to professional level with specialized support.",
+        "certifications": [
+          "Advanced HTML5 and CSS3",
+          "JavaScript Fundamentals and ES6+",
+          "React and Front-end Development",
+          "Node.js and Back-end Development",
+          "Databases and RESTful APIs",
+          "Practical Projects for Portfolio"
+        ]
+      }
+    }
   }
 }

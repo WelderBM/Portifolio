@@ -62,66 +62,148 @@
       "title": "Landing Page Barbearia",
       "description": "Uma landing page para uma barbearia, criada para aprimorar minhas habilidades de design e layout."
     }
-  },  "experience": {
-      "section": {
-        "title": "Experiência Profissional",
-        "subtitle": "Minha trajetória em desenvolvimento front-end, focada em construir interfaces web e mobile escaláveis e de alta performance. Experiência em liderança técnica, otimização e user experience."
+  },
+  "experience": {
+    "section": {
+      "title": "Experiência Profissional",
+      "subtitle": "Minha trajetória em desenvolvimento front-end, focada em construir interfaces web e mobile escaláveis e de alta performance. Experiência em liderança técnica, otimização e user experience."
+    },
+    "pigz": {
+      "web": {
+        "title": "Desenvolvedor Frontend",
+        "subtitle": "Desenvolvimento Web",
+        "period": "Abr 2025 – Jun 2025",
+        "description": "Desenvolvimento e manutenção de aplicações web críticas para o negócio, utilizando React.js, Next.js e TypeScript, para sistemas como Pigz Comanda, Pigz Kiosk e Pigz Desktop Management. Foco na entrega de soluções robustas e performáticas.",
+        "highlights": [
+          "Liderança técnica na resolução de hotfixes críticos de produção, garantindo rápida recuperação e continuidade operacional da plataforma, minimizando impactos para usuários e negócios.",
+          "Reconhecido pela autonomia e adaptação acelerada a novas tecnologias, como Redux e Context API, sendo um dos membros da equipe com a melhor curva de aprendizado inicial.",
+          "Participação ativa em cerimônias Scrum (Daily, Sprint Review), utilizando Jira e Google Workspace, contribuindo para implantações diárias e um fluxo de trabalho ágil e eficiente.",
+          "Contribuição contínua para revisões de código, documentação técnica e controle de versão via GitHub, assegurando a qualidade, escalabilidade e manutenibilidade da base de código.",
+          "Implementação de otimizações de performance em dashboards e interfaces de gestão complexas, resultando em carregamento mais rápido e melhor usabilidade para clientes e colaboradores."
+        ]
       },
-      "pigz": {
-        "web": {
-          "title": "Desenvolvedor Frontend",
-          "subtitle": "Desenvolvimento Web",
-          "period": "Abr 2025 – Jun 2025",
-          "description": "Desenvolvimento e manutenção de aplicações web críticas para o negócio, utilizando React.js, Next.js e TypeScript, para sistemas como Pigz Comanda, Pigz Kiosk e Pigz Desktop Management. Foco na entrega de soluções robustas e performáticas.",
-          "highlights": [
-            "Liderança técnica na resolução de hotfixes críticos de produção, garantindo rápida recuperação e continuidade operacional da plataforma, minimizando impactos para usuários e negócios.",
-            "Reconhecido pela autonomia e adaptação acelerada a novas tecnologias, como Redux e Context API, sendo um dos membros da equipe com a melhor curva de aprendizado inicial.",
-            "Participação ativa em cerimônias Scrum (Daily, Sprint Review), utilizando Jira e Google Workspace, contribuindo para implantações diárias e um fluxo de trabalho ágil e eficiente.",
-            "Contribuição contínua para revisões de código, documentação técnica e controle de versão via GitHub, assegurando a qualidade, escalabilidade e manutenibilidade da base de código.",
-            "Implementação de otimizações de performance em dashboards e interfaces de gestão complexas, resultando em carregamento mais rápido e melhor usabilidade para clientes e colaboradores."
-          ]
-        },
-        "mobile": {
-          "title": "Desenvolvedor Mobile",
-          "subtitle": "React Native",
-          "period": "Fev 2025 – Abr 2025",
-          "description": "Desenvolvimento de aplicações mobile robustas utilizando React Native, com foco em performance, escalabilidade e uma excelente experiência do usuário em dispositivos iOS e Android.",
-          "highlights": [
-            "Implementação de funcionalidades complexas com React Native e TypeScript, garantindo código limpo, manutenível e aderente aos padrões de mercado.",
-            "Gerenciamento de estado robusto utilizando Redux, melhorando a manutenibilidade e previsibilidade da aplicação em cenários de alta complexidade.",
-            "Participação ativa em code reviews, promovendo padrões de código de alta qualidade, colaboração técnica e disseminação de melhores práticas de desenvolvimento mobile.",
-            "Otimização de performance e experiência do usuário em aplicações mobile críticas para o negócio, resultando em maior engajamento e satisfação dos usuários.",
-            "Integração eficiente de APIs RESTful e serviços de terceiros para expandir as capacidades das aplicações móveis, garantindo conectividade e funcionalidade."
-          ]
-        }
+      "mobile": {
+        "title": "Desenvolvedor Mobile",
+        "subtitle": "React Native",
+        "period": "Fev 2025 – Abr 2025",
+        "description": "Desenvolvimento de aplicações mobile robustas utilizando React Native, com foco em performance, escalabilidade e uma excelente experiência do usuário em dispositivos iOS e Android.",
+        "highlights": [
+          "Implementação de funcionalidades complexas com React Native e TypeScript, garantindo código limpo, manutenível e aderente aos padrões de mercado.",
+          "Gerenciamento de estado robusto utilizando Redux, melhorando a manutenibilidade e previsibilidade da aplicação em cenários de alta complexidade.",
+          "Participação ativa em code reviews, promovendo padrões de código de alta qualidade, colaboração técnica e disseminação de melhores práticas de desenvolvimento mobile.",
+          "Otimização de performance e experiência do usuário em aplicações mobile críticas para o negócio, resultando em maior engajamento e satisfação dos usuários.",
+          "Integração eficiente de APIs RESTful e serviços de terceiros para expandir as capacidades das aplicações móveis, garantindo conectividade e funcionalidade."
+        ]
+      }
+    },
+    "r2t": {
+      "junior": {
+        "title": "Desenvolvedor Frontend Júnior",
+        "subtitle": "Desenvolvimento Web",
+        "period": "Jul 2022 – Dez 2022",
+        "description": "Atuação como Desenvolvedor Front-end Júnior, focado na construção de sistemas web dinâmicos e responsivos com React.js, Next.js e JavaScript, priorizando responsividade, acessibilidade e usabilidade para o usuário final.",
+        "highlights": [
+          "Condução da atualização de um projeto para a versão mais recente do Next.js, resultando em melhorias significativas de desempenho, validadas por métricas do Google Lighthouse.",
+          "Recebeu reconhecimento interno como referência em Next.js, liderando um projeto de alta visibilidade e impacto estratégico, contribuindo para a evolução tecnológica da empresa.",
+          "Colaboração direta com designers na arquitetura visual e otimização de UI/UX, garantindo a fidelidade ao design e o refinamento contínuo do produto final.",
+          "Implementação do Storybook para documentação de componentes e definição de sistemas de componentes, visando escalabilidade e manutenção eficaz do frontend.",
+          "Mentoria de estagiários, compartilhando conhecimentos sobre melhores práticas de desenvolvimento, padrões de projeto e metodologias ágeis, contribuindo para o crescimento da equipe."
+        ]
       },
-      "r2t": {
-        "junior": {
-          "title": "Desenvolvedor Frontend Júnior",
-          "subtitle": "Desenvolvimento Web",
-          "period": "Jul 2022 – Dez 2022",
-          "description": "Atuação como Desenvolvedor Front-end Júnior, focado na construção de sistemas web dinâmicos e responsivos com React.js, Next.js e JavaScript, priorizando responsividade, acessibilidade e usabilidade para o usuário final.",
-          "highlights": [
-            "Condução da atualização de um projeto para a versão mais recente do Next.js, resultando em melhorias significativas de desempenho, validadas por métricas do Google Lighthouse.",
-            "Recebeu reconhecimento interno como referência em Next.js, liderando um projeto de alta visibilidade e impacto estratégico, contribuindo para a evolução tecnológica da empresa.",
-            "Colaboração direta com designers na arquitetura visual e otimização de UI/UX, garantindo a fidelidade ao design e o refinamento contínuo do produto final.",
-            "Implementação do Storybook para documentação de componentes e definição de sistemas de componentes, visando escalabilidade e manutenção eficaz do frontend.",
-            "Mentoria de estagiários, compartilhando conhecimentos sobre melhores práticas de desenvolvimento, padrões de projeto e metodologias ágeis, contribuindo para o crescimento da equipe."
-          ]
-        },
-        "intern": {
-          "title": "Estagiário de Desenvolvimento Frontend",
-          "subtitle": "Desenvolvimento Web",
-          "period": "Fev 2022 – Jul 2022",
-          "description": "Início da carreira como Estagiário de Desenvolvimento Front-end, com foco em aprendizado prático em React, construção de componentes reutilizáveis e aplicação de boas práticas de desenvolvimento web.",
-          "highlights": [
-            "Desenvolvimento de componentes React reutilizáveis com HTML5 e CSS3, seguindo padrões de design e garantindo a consistência visual da aplicação.",
-            "Colaboração ativa com o time de design, utilizando ferramentas como Figma, para garantir a implementação fiel de interfaces e aprimorar a experiência do usuário.",
-            "Participação em cerimônias Scrum e aprendizado de metodologias ágeis de desenvolvimento, contribuindo para um ciclo de entrega contínuo e colaborativo.",
-            "Participação ativa em operações críticas de rollback via Git, demonstrando pragmatismo e capacidade de resolução de problemas em ambientes de produção.",
-            "Contribuição na manutenção e refatoração de código legacy, aplicando princípios de código limpo, modularidade e escalabilidade para modernização da base de código."
-          ]
-        }
+      "intern": {
+        "title": "Estagiário de Desenvolvimento Frontend",
+        "subtitle": "Desenvolvimento Web",
+        "period": "Fev 2022 – Jul 2022",
+        "description": "Início da carreira como Estagiário de Desenvolvimento Front-end, com foco em aprendizado prático em React, construção de componentes reutilizáveis e aplicação de boas práticas de desenvolvimento web.",
+        "highlights": [
+          "Desenvolvimento de componentes React reutilizáveis com HTML5 e CSS3, seguindo padrões de design e garantindo a consistência visual da aplicação.",
+          "Colaboração ativa com o time de design, utilizando ferramentas como Figma, para garantir a implementação fiel de interfaces e aprimorar a experiência do usuário.",
+          "Participação em cerimônias Scrum e aprendizado de metodologias ágeis de desenvolvimento, contribuindo para um ciclo de entrega contínuo e colaborativo.",
+          "Participação ativa em operações críticas de rollback via Git, demonstrando pragmatismo e capacidade de resolução de problemas em ambientes de produção.",
+          "Contribuição na manutenção e refatoração de código legacy, aplicando princípios de código limpo, modularidade e escalabilidade para modernização da base de código."
+        ]
       }
     }
+  },
+  "education": {
+    "section": {
+      "title": "Formação Acadêmica",
+      "subtitle": "Minha base educacional e certificações profissionais"
+    },
+    "ifrr": {
+      "technical": {
+        "title": "Curso Técnico em Informática",
+        "subtitle": "Integrado ao Ensino Médio",
+        "period": "2019 - 2021",
+        "description": "Formação sólida em fundamentos de computação, lógica de programação e princípios de desenvolvimento de software. Desenvolveu habilidades práticas em programação e compreensão de arquitetura de sistemas.",
+        "certifications": [
+          "Fundamentos de Programação",
+          "Lógica de Programação",
+          "Arquitetura de Computadores",
+          "Redes de Computadores",
+          "Banco de Dados"
+        ]
+      }
+    },
+    "cubos": {
+      "backend": {
+        "title": "Desenvolvedor Backend Certificado",
+        "subtitle": "Cubos Academy",
+        "period": "2023",
+        "description": "Certificação profissional em desenvolvimento backend com foco em JavaScript/Node.js. Adquiri conhecimentos aprofundados em arquitetura de APIs, bancos de dados e boas práticas de desenvolvimento full-stack.",
+        "certifications": [
+          "Desenvolvimento com Node.js",
+          "Arquitetura de APIs RESTful",
+          "Bancos de Dados SQL e NoSQL",
+          "Autenticação e Autorização",
+          "Boas Práticas de Desenvolvimento"
+        ]
+      }
+    },
+    "senai": {
+      "frontend": {
+        "title": "Curso Profissional em Programação Web Frontend",
+        "subtitle": "SENAI - Serviço Nacional de Aprendizagem Industrial",
+        "period": "2025",
+        "description": "Especialização em desenvolvimento frontend moderno com React, Next.js e TypeScript. Aprofundou conhecimentos em criação de interfaces responsivas, otimização de performance e melhores práticas de desenvolvimento com frameworks atuais.",
+        "certifications": [
+          "React e React Hooks",
+          "Next.js e SSR/SSG",
+          "TypeScript Avançado",
+          "Styled Components e TailwindCSS",
+          "Otimização de Performance e SEO"
+        ]
+      }
+    },
+    "senac": {
+      "english": {
+        "title": "Curso de Inglês",
+        "subtitle": "SENAC - Serviço Nacional de Aprendizagem Comercial",
+        "period": "2019 - Em andamento",
+        "description": "Desenvolvimento contínuo de proficiência em língua inglesa, essencial para a carreira em desenvolvimento de software. Participando de aulas regulares para aprimorar comunicação e compreensão técnica em inglês.",
+        "certifications": [
+          "Vocabulário Técnico em Programação",
+          "Comunicação Profissional",
+          "Leitura de Documentação Técnica",
+          "Compreensão Auditiva"
+        ]
+      }
+    },
+    "devclub": {
+      "fullstack": {
+        "title": "Formação Full Stack JavaScript",
+        "subtitle": "Desenvolvimento Web Profissional",
+        "period": "2022",
+        "description": "Formação completa em desenvolvimento full stack com foco em JavaScript. Adquiri habilidades práticas em front-end e back-end, com mais de 10 projetos para portfólio e mais de 80 horas de conteúdo prático. Formação que vai do zero ao nível profissional com suporte especializado.",
+        "certifications": [
+          "HTML5 e CSS3 Avançado",
+          "JavaScript Fundamentos e ES6+",
+          "React e Desenvolvimento Front-end",
+          "Node.js e Desenvolvimento Back-end",
+          "Bancos de Dados e APIs RESTful",
+          "Projetos Práticos para Portfólio"
+        ]
+      }
+    }
+  }
 }
