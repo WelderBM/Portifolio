@@ -1,9 +1,6 @@
 import React from "react";
 import {
   Container,
-  Header,
-  Title,
-  Subtitle,
   EducationCard,
   CardContent,
   CardImage,
@@ -19,6 +16,7 @@ import {
   LogoDiv,
 } from "./Education.styles";
 import { useTranslation } from "react-i18next";
+import TitlesComponent from "../TitlesComponent/TitlesComponent";
 
 interface EducationItem {
   titleKey: string;
@@ -119,10 +117,10 @@ const Education: React.FC = () => {
 
   return (
     <Container>
-      <Header>
-        <Title>{t("education.section.title")}</Title>
-        <Subtitle>{t("education.section.subtitle")}</Subtitle>
-      </Header>
+      <TitlesComponent
+        title={t("education.section.title")}
+        subtitle={t("education.section.subtitle")}
+      />
 
       {educations.map((edu, index) => (
         <EducationCard

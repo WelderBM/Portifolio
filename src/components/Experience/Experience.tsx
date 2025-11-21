@@ -1,9 +1,6 @@
 import React from "react";
 import {
   Container,
-  Header,
-  Title,
-  Subtitle,
   ExperienceCard,
   CardContent,
   CardImage,
@@ -21,6 +18,7 @@ import {
   LogoDiv,
 } from "./Experience.styles";
 import { useTranslation } from "react-i18next";
+import TitlesComponent from "../TitlesComponent/TitlesComponent";
 
 interface ExperienceRole {
   titleKey: string;
@@ -166,11 +164,10 @@ const Experience: React.FC = () => {
 
   return (
     <Container>
-      <Header>
-        <Title>{t("experience.section.title")}</Title>
-        <Subtitle>{t("experience.section.subtitle")}</Subtitle>
-      </Header>
-
+      <TitlesComponent
+        title={t("experience.section.title")}
+        subtitle={t("experience.section.subtitle")}
+      />
       {experiences.map((exp) => (
         <ExperienceCard key={exp.company}>
           <CardContent>
