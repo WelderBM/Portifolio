@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const DownloadCv = styled.a`
+export const GlobalButton = styled.button`
   display: flex;
   align-items: center;
   justify-content: center;

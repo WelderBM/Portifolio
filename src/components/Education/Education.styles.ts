@@ -12,7 +12,7 @@ export const Container = styled.section`
 `;
 
 export const EducationCard = styled.article`
-  width: 90%;
+  width: 100%;
   max-width: 1400px;
   background-color: ${(props) => props.theme.backgroundColor};
   border: 1px solid ${(props) => props.theme.fontColor}40;

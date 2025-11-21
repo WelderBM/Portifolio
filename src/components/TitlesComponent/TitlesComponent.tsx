@@ -6,7 +6,12 @@ const TitlesComponent: React.FC<{ title: string; subtitle: string }> = ({
   subtitle,
 }) => {
   return (
-    <TitlesContainer>
+    <TitlesContainer
+      data-aos="flip-up"
+      data-aos-offset="250"
+      data-aos-duration="1000"
+      data-aos-easing="ease-out"
+    >
       <Title>{title}</Title>
       <Subtitle>{subtitle}</Subtitle>
     </TitlesContainer>

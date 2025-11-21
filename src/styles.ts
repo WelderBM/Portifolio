@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Background = styled.div`
   width: 100%;
-  height: 90vh;
+  height: 100vh;
   position: relative;
 
   display: flex;
@@ -22,7 +22,7 @@ export const Background = styled.div`
     right: 0;
     bottom: 0;
     background-color: ${(props) => props.theme.body};
-    opacity: 0.9;
+    opacity: 0.5;
     z-index: 1;
   }
 `;

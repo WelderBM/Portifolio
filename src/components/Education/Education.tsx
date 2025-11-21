@@ -17,6 +17,7 @@ import {
 } from "./Education.styles";
 import { useTranslation } from "react-i18next";
 import TitlesComponent from "../TitlesComponent/TitlesComponent";
+import ExpandableList from "../ExpandibleList/ExpandableList";
 
 interface EducationItem {
   titleKey: string;
@@ -121,59 +122,54 @@ const Education: React.FC = () => {
         title={t("education.section.title")}
         subtitle={t("education.section.subtitle")}
       />
+      <ExpandableList maxItemsToShow={2}>
+        {educations.map((edu) => (
+          <EducationCard>
+            <CardContent>
+              <div>
+                {edu.items.map((item, itemIndex) => (
+                  <div key={`${edu.institution}-${itemIndex}`}>
+                    <EducationContainer>
+                      <div>
+                        <EducationTitle>{t(item.titleKey)}</EducationTitle>
+                        <EducationSubtitle>
+                          {t(item.subtitleKey)}
+                        </EducationSubtitle>
+                      </div>
+                      <div style={{ textAlign: "right" }}>
+                        <Period>{t(item.periodKey)}</Period>
+                      </div>
+                    </EducationContainer>
 
-      {educations.map((edu, index) => (
-        <EducationCard
-          key={edu.institution}
-          data-aos={index % 2 === 0 ? "fade-right" : "fade-left"}
-          data-aos-offset="250"
-          data-aos-duration="1000"
-          data-aos-easing="ease-out"
-        >
-          <CardContent>
-            <div>
-              {edu.items.map((item, itemIndex) => (
-                <div key={`${edu.institution}-${itemIndex}`}>
-                  <EducationContainer>
-                    <div>
-                      <EducationTitle>{t(item.titleKey)}</EducationTitle>
-                      <EducationSubtitle>
-                        {t(item.subtitleKey)}
-                      </EducationSubtitle>
-                    </div>
-                    <div style={{ textAlign: "right" }}>
-                      <Period>{t(item.periodKey)}</Period>
-                    </div>
-                  </EducationContainer>
+                    <Description>{t(item.descriptionKey)}</Description>
 
-                  <Description>{t(item.descriptionKey)}</Description>
+                    <CertificationsList>
+                      {Array.isArray(
+                        t(item.certificationsKey, { returnObjects: true })
+                      ) &&
+                        (
+                          t(item.certificationsKey, {
+                            returnObjects: true,
+                          }) as string[]
+                        ).map((certification, idx) => (
+                          <CertificationItem key={idx}>
+                            ✓ {certification}
+                          </CertificationItem>
+                        ))}
+                    </CertificationsList>
 
-                  <CertificationsList>
-                    {Array.isArray(
-                      t(item.certificationsKey, { returnObjects: true })
-                    ) &&
-                      (
-                        t(item.certificationsKey, {
-                          returnObjects: true,
-                        }) as string[]
-                      ).map((certification, idx) => (
-                        <CertificationItem key={idx}>
-                          ✓ {certification}
-                        </CertificationItem>
-                      ))}
-                  </CertificationsList>
-
-                  {itemIndex < edu.items.length - 1 && <EducationDivider />}
-                </div>
-              ))}
-            </div>
-            <LogoDiv style={{ flex: 0 }}>
-              <CardImage src={edu.image} alt={`${edu.institution} logo`} />
-              <EducationLevel>{edu.institution}</EducationLevel>
-            </LogoDiv>
-          </CardContent>
-        </EducationCard>
-      ))}
+                    {itemIndex < edu.items.length - 1 && <EducationDivider />}
+                  </div>
+                ))}
+              </div>
+              <LogoDiv style={{ flex: 0 }}>
+                <CardImage src={edu.image} alt={`${edu.institution} logo`} />
+                <EducationLevel>{edu.institution}</EducationLevel>
+              </LogoDiv>
+            </CardContent>
+          </EducationCard>
+        ))}
+      </ExpandableList>
     </Container>
   );
 };

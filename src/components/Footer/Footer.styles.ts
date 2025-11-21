@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const FooterContainer = styled.footer`
   display: flex;
@@ -6,7 +6,7 @@ export const FooterContainer = styled.footer`
   justify-content: center;
   align-items: center;
   padding: 20px;
-  background-color: ${({ theme }) => theme.backgroundColor}; 
+  background-color: ${({ theme }) => theme.backgroundColor};
 
   @media (min-width: 768px) {
     flex-direction: row; /* Muda para linha em telas maiores */
@@ -15,9 +15,9 @@ export const FooterContainer = styled.footer`
 `;
 
 const colors = {
-  whatsapp: '#25D366',
-  linkedin: '#0077B5',
-  github: '#181717',
+  whatsapp: "#25D366",
+  linkedin: "#0077B5",
+  github: "#181717",
 };
 
 // Componente Row com efeitos de hover
@@ -45,7 +45,7 @@ export const Row = styled.div`
     border-radius: 10px;
 
     &:nth-child(1):hover {
-      color: ${colors.whatsapp}; 
+      color: ${colors.whatsapp};
     }
 
     &:nth-child(2):hover {
@@ -53,7 +53,7 @@ export const Row = styled.div`
     }
 
     &:nth-child(3):hover {
-      color: ${colors.github}; 
+      color: white;
       background: ${({ theme }) => theme.fontColor};
     }
 
@@ -66,11 +66,11 @@ export const Row = styled.div`
     }
 
     &:nth-child(2):hover svg {
-      color: ${colors.linkedin}; 
+      color: ${colors.linkedin};
     }
 
     &:nth-child(3):hover svg {
-      color: ${colors.github}; 
+      color: white;
     }
   }
 `;

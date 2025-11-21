@@ -25,6 +25,7 @@ import WhatsAppPopup from "./components/WhatsAppPopup/WhatsAppPopup";
 import Footer from "./components/Footer/Footer";
 import Experience from "./components/Experience/Experience";
 import Education from "./components/Education/Education";
+import { ArrowBounce } from "./components/ArrowBottom/ArrowBounce";
 
 function App() {
   const [theme, setTheme] = useState("dark");
@@ -40,18 +41,18 @@ function App() {
     <ThemeProvider theme={theme === "light" ? lightTheme : darkTheme}>
       <GlobalStyle theme={theme === "light" ? lightTheme : darkTheme} />
       <WhatsAppPopup />
-      <Header
-        themeToggler={themeToggler}
-        selectedFlag={selectedFlag}
-        setSelectedFlag={setSelectedFlag}
-      />
       <Background id="inicio">
         <Content>
-          <div></div>
+          <Header
+            themeToggler={themeToggler}
+            selectedFlag={selectedFlag}
+            setSelectedFlag={setSelectedFlag}
+          />
           <Main>
             <Texts />
             <ContactIcons theme={theme} />
           </Main>
+          <ArrowBounce />
           <IconsSlider />
         </Content>
       </Background>
