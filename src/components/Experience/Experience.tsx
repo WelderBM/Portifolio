@@ -19,7 +19,7 @@ import {
   HighlightItem,
   RoleDivider,
   LogoDiv,
-} from "./ProjectsCads.styles";
+} from "./Experience.styles";
 import { useTranslation } from "react-i18next";
 
 interface ExperienceRole {
