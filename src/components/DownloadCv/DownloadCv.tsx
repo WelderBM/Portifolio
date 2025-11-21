@@ -14,7 +14,6 @@ const ButtonLink: React.FC<ButtonLinkProps> = ({ href, children }) => {
       className="animate__animated animate__tada"
     >
       {children}
-      <img src="/curriculo_icon.png" alt="curriculo_icon" width={20} />
     </DownloadCv>
   );
 };
