@@ -52,12 +52,13 @@ function App() {
             <Texts />
             <ContactIcons theme={theme} />
           </Main>
-          <ArrowBounce />
+          <ArrowBounce goToSection="sobre" />
           <IconsSlider />
         </Content>
       </Background>
       <BackgroundGeometric id="sobre">
         <About selectedFlag={selectedFlag} />
+        <ArrowBounce goToSection="projetos" />
       </BackgroundGeometric>
       <BackgroundBack id="projetos">
         <ProjectsCads />

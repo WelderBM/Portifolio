@@ -6,6 +6,7 @@ export const TitlesContainer = styled.div`
   border-radius: 20px;
   position: relative;
   overflow: hidden;
+  margin-top: 80px;
 
   @media (max-width: 768px) {
     padding: 40px 25px;

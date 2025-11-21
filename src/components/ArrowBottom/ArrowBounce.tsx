@@ -1,9 +1,13 @@
 import React from "react";
 import "./ArrowBounce.css";
 
-export const ArrowBounce: React.FC = () => {
+interface ArrowBounceProps {
+  goToSection: string;
+}
+
+export const ArrowBounce: React.FC<ArrowBounceProps> = ({ goToSection }) => {
   const handleClick = () => {
-    const el = document.getElementById("sobre");
+    const el = document.getElementById(goToSection);
     if (el) {
       el.scrollIntoView({ behavior: "smooth" });
     }

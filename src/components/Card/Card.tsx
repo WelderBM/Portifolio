@@ -10,7 +10,7 @@ import {
 } from "./Card.styles";
 import { FaExternalLinkAlt } from "react-icons/fa";
 import { IconContext } from "react-icons";
-import { darkTheme, lightTheme } from '../../theme';
+import { darkTheme, lightTheme } from "../../theme";
 
 interface ProjectCardsProps {
   imageSrc: string;
@@ -19,7 +19,7 @@ interface ProjectCardsProps {
   buttonNames: string[];
   buttonColors: string[];
   theme: string;
-  linkDeploy: string;
+  onClick?: () => void;
 }
 
 const Card: React.FC<ProjectCardsProps> = ({
@@ -29,11 +29,11 @@ const Card: React.FC<ProjectCardsProps> = ({
   buttonNames,
   buttonColors,
   theme,
-  linkDeploy
+  onClick,
 }) => {
   return (
     <IconContext.Provider value={{ className: "contactIcon" }}>
-      <CardContainer onClick={() => { window.location.href = linkDeploy; }}>
+      <CardContainer onClick={onClick}>
         <Image
           src={imageSrc}
           alt="Project"

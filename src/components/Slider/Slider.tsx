@@ -5,6 +5,7 @@ import { SliderContainer } from "./Slider.style";
 import { useTranslation } from "react-i18next";
 import { useEffect, useState } from "react";
 import Card from "../Card/Card";
+import { ModalConfirm } from "../ModalConfirm/ModalConfirm";
 
 function SwipeToSlide() {
   const { t } = useTranslation();
@@ -22,6 +23,9 @@ function SwipeToSlide() {
     }
     return 3;
   });
+
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [selectedProject, setSelectedProject] = useState<any>(null);
 
   useEffect(() => {
     if (typeof window === "undefined") return;
@@ -163,6 +167,17 @@ function SwipeToSlide() {
       data-aos-duration="1000"
       data-aos-easing="ease-out"
     >
+      <ModalConfirm
+        isOpen={isModalOpen}
+        onClose={() => setIsModalOpen(false)}
+        onConfirm={() => {
+          if (selectedProject) {
+            window.open(selectedProject.linkDeploy, "_blank");
+          }
+          setIsModalOpen(false);
+        }}
+        projectName={selectedProject?.title || ""}
+      />
       <Slider {...settings}>
         {projects.map((project, index) => (
           <Card
@@ -173,7 +188,10 @@ function SwipeToSlide() {
             buttonNames={project.buttonNames}
             buttonColors={project.buttonColors}
             theme={""}
-            linkDeploy={project.linkDeploy}
+            onClick={() => {
+              setSelectedProject(project);
+              setIsModalOpen(true);
+            }}
           />
         ))}
       </Slider>

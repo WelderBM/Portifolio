@@ -8,7 +8,7 @@ const TitlesComponent: React.FC<{ title: string; subtitle: string }> = ({
   return (
     <TitlesContainer
       data-aos="flip-up"
-      data-aos-offset="250"
+      data-aos-offset="150"
       data-aos-duration="1000"
       data-aos-easing="ease-out"
     >
