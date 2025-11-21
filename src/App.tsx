@@ -23,7 +23,7 @@ import About from "./components/About/About";
 import ProjectsCads from "./components/ProjectsCads/ProjectsCads";
 import WhatsAppPopup from "./components/WhatsAppPopup/WhatsAppPopup";
 import Footer from "./components/Footer/Footer";
-import Experience from "./components/Experience/ProjectsCads";
+import Experience from "./components/Experience/Experience";
 import Education from "./components/Education/Education";
 
 function App() {

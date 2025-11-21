@@ -22,7 +22,7 @@
   },
   "projects": {
     "title": "Projetos",
-    "description": "Explore os projetos nos quais trabalhei. Clique nos cards para obter mais detalhes sobre cada um.",
+    "subtitle": "Explore os projetos nos quais trabalhei. Clique nos cards para obter mais detalhes sobre cada um.",
     "instagram_app": {
       "title": "App Instagram",
       "description": "Um app com tema de Instagram, com troca de temas (claro/escuro) e integração com uma API de fotos."

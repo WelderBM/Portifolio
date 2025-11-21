@@ -22,7 +22,7 @@
   },
   "projects": {
     "title": "Projects",
-    "description": "Explore the projects I've worked on. Click the cards for detailed insights into each exciting project.",
+    "subtitle": "Explore the projects I've worked on. Click the cards for detailed insights into each exciting project.",
     "instagram_app": {
       "title": "Instagram App",
       "description": "An Instagram-themed app with theme switching (light/dark) and integration with a photo API."

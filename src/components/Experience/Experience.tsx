@@ -169,7 +169,7 @@ const Experience: React.FC = () => {
         subtitle={t("experience.section.subtitle")}
       />
       {experiences.map((exp) => (
-        <ExperienceCard key={exp.company}>
+        <ExperienceCard key={exp.company} data-aos="fade-up">
           <CardContent>
             <div>
               {exp.roles.map((role, roleIndex) => (
