@@ -52,9 +52,12 @@ export const Row = styled.div`
       color: ${colors.linkedin};
     }
 
+    &:hover {
+      scale: 1.1;
+    }
+
     &:nth-child(3):hover {
       color: white;
-      background: ${({ theme }) => theme.fontColor};
     }
 
     svg {
