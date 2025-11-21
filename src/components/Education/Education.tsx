@@ -16,6 +16,7 @@ import {
   CertificationsList,
   CertificationItem,
   EducationDivider,
+  LogoDiv,
 } from "./Education.styles";
 import { useTranslation } from "react-i18next";
 
@@ -123,8 +124,14 @@ const Education: React.FC = () => {
         <Subtitle>{t("education.section.subtitle")}</Subtitle>
       </Header>
 
-      {educations.map((edu) => (
-        <EducationCard key={edu.institution}>
+      {educations.map((edu, index) => (
+        <EducationCard
+          key={edu.institution}
+          data-aos={index % 2 === 0 ? "fade-right" : "fade-left"}
+          data-aos-offset="250"
+          data-aos-duration="1000"
+          data-aos-easing="ease-out"
+        >
           <CardContent>
             <div>
               {edu.items.map((item, itemIndex) => (
@@ -162,10 +169,10 @@ const Education: React.FC = () => {
                 </div>
               ))}
             </div>
-            <div style={{ flex: 0 }}>
+            <LogoDiv style={{ flex: 0 }}>
               <CardImage src={edu.image} alt={`${edu.institution} logo`} />
               <EducationLevel>{edu.institution}</EducationLevel>
-            </div>
+            </LogoDiv>
           </CardContent>
         </EducationCard>
       ))}

@@ -157,7 +157,12 @@ function SwipeToSlide() {
   ];
 
   return (
-    <SliderContainer>
+    <SliderContainer
+      data-aos="fade-left"
+      data-aos-offset="500"
+      data-aos-duration="1000"
+      data-aos-easing="ease-out"
+    >
       <Slider {...settings}>
         {projects.map((project, index) => (
           <Card

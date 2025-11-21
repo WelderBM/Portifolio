@@ -20,7 +20,6 @@ export const Header = styled.div`
 
   @media (max-width: 768px) {
     padding: 40px 25px;
-    margin-top: 50px;
   }
 `;
 
@@ -104,9 +103,8 @@ export const ExperienceCard = styled.article`
 `;
 
 export const CardContent = styled.div`
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
   gap: 40px;
   justify-content: space-between;
 
@@ -122,7 +120,8 @@ export const CardContent = styled.div`
   }
 
   @media (max-width: 768px) {
-    flex-direction: column;
+    display: flex;
+    flex-direction: column-reverse;
     align-items: center;
     gap: 25px;
 
@@ -130,6 +129,14 @@ export const CardContent = styled.div`
       width: 100%;
     }
   }
+`;
+
+export const LogoDiv = styled.div`
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
 `;
 
 export const CardImage = styled.img`

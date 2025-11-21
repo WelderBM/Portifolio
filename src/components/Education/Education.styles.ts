@@ -5,8 +5,8 @@ export const Container = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 60px;
-  margin-bottom: 120px;
+  gap: 20px;
+  margin-bottom: 60px;
   position: relative;
   z-index: 1;
 `;
@@ -20,7 +20,6 @@ export const Header = styled.div`
 
   @media (max-width: 768px) {
     padding: 40px 25px;
-    margin-top: 50px;
   }
 `;
 
@@ -122,7 +121,7 @@ export const CardContent = styled.div`
   }
 
   @media (max-width: 768px) {
-    flex-direction: column;
+    flex-direction: column-reverse;
     align-items: center;
     gap: 25px;
 
@@ -130,6 +129,14 @@ export const CardContent = styled.div`
       width: 100%;
     }
   }
+`;
+
+export const LogoDiv = styled.div`
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
 `;
 
 export const CardImage = styled.img`

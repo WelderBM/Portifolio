@@ -1,10 +1,12 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const DownloadCv = styled.a`
-  display: inline-block;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
   background-color: #f97c22;
-  color: white;
+  color: black;
   border: none;
   border-radius: 10px;
   padding: 10px 20px;

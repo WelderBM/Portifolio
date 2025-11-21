@@ -5,6 +5,7 @@ import { GlobalStyle } from "./GlobalStyles";
 import { darkTheme, lightTheme } from "./theme";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import "animate.css";
 
 import {
   Background,
@@ -39,13 +40,14 @@ function App() {
     <ThemeProvider theme={theme === "light" ? lightTheme : darkTheme}>
       <GlobalStyle theme={theme === "light" ? lightTheme : darkTheme} />
       <WhatsAppPopup />
+      <Header
+        themeToggler={themeToggler}
+        selectedFlag={selectedFlag}
+        setSelectedFlag={setSelectedFlag}
+      />
       <Background id="inicio">
         <Content>
-          <Header
-            themeToggler={themeToggler}
-            selectedFlag={selectedFlag}
-            setSelectedFlag={setSelectedFlag}
-          />
+          <div></div>
           <Main>
             <Texts />
             <ContactIcons theme={theme} />

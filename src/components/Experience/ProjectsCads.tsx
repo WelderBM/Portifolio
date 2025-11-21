@@ -18,6 +18,7 @@ import {
   HighlightsList,
   HighlightItem,
   RoleDivider,
+  LogoDiv,
 } from "./ProjectsCads.styles";
 import { useTranslation } from "react-i18next";
 
@@ -226,10 +227,10 @@ const Experience: React.FC = () => {
                 </div>
               ))}
             </div>
-            <div style={{ flex: 0 }}>
+            <LogoDiv>
               <CardImage src={exp.image} alt={`${exp.company} logo`} />
               <RoleTitle>{exp.company}</RoleTitle>
-            </div>
+            </LogoDiv>
           </CardContent>
         </ExperienceCard>
       ))}

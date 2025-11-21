@@ -1,30 +1,29 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const Background = styled.div`
   width: 100%;
-  height: 100vh;
+  height: 90vh;
   position: relative;
 
   display: flex;
   justify-content: center;
   align-items: center;
 
-  background-image: url('/background.webp');
+  background-image: url("/background.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 
-
   &::before {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: ${props => props.theme.body}; 
-    opacity: 0.9; 
-    z-index: 1; 
+    background-color: ${(props) => props.theme.body};
+    opacity: 0.9;
+    z-index: 1;
   }
 `;
 
@@ -39,15 +38,14 @@ export const Content = styled.div`
   align-items: center;
   justify-content: space-between;
 
-  color: ${props => props.theme.fontColor};
+  color: ${(props) => props.theme.fontColor};
 `;
-
 
 export const Main = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-`
+`;
 
 export const BackgroundGeometric = styled.div`
   width: 100%;
@@ -58,47 +56,45 @@ export const BackgroundGeometric = styled.div`
   align-items: center;
   position: relative;
 
-  background-image: url('/backgroundGeometric.webp');
+  background-image: url("/backgroundGeometric.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 
-    &::before {
-    content: '';
+  &::before {
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: ${props => props.theme.body}; 
-    opacity: 0.7; 
+    background-color: ${(props) => props.theme.body};
+    opacity: 0.7;
     z-index: 1;
-    } 
-`
+  }
+`;
 export const BackgroundBack = styled.div`
   width: 100%;
-  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
   margin: 0 !important;
 
-  background-color: ${props => props.theme.body};
+  background-color: ${(props) => props.theme.body};
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 
-    &::before {
-    content: '';
+  &::before {
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: ${props => props.theme.body}; 
-    opacity: 0.7; 
+    background-color: ${(props) => props.theme.body};
+    opacity: 0.7;
     z-index: 1;
-    } 
-`
-
+  }
+`;
