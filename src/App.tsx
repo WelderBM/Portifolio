@@ -3,6 +3,8 @@ import "./App.css";
 import { ThemeProvider } from "styled-components";
 import { GlobalStyle } from "./GlobalStyles";
 import { darkTheme, lightTheme } from "./theme";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 import {
   Background,
@@ -30,6 +32,8 @@ function App() {
   const themeToggler = () => {
     return theme === "light" ? setTheme("dark") : setTheme("light");
   };
+
+  AOS.init();
 
   return (
     <ThemeProvider theme={theme === "light" ? lightTheme : darkTheme}>
