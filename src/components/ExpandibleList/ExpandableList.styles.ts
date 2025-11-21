@@ -37,11 +37,12 @@ export const Overlay = styled.div<{ width: number }>`
   background: linear-gradient(
     to top,
     rgba(255, 255, 255, 0.9) 0%,
+    rgba(255, 255, 255, 0.7) 20%,
+    rgba(255, 255, 255, 0.4) 45%,
+    rgba(255, 255, 255, 0.15) 70%,
+    rgba(255, 255, 255, 0.05) 85%,
     rgba(255, 255, 255, 0) 100%
   );
-
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
 `;
 
 export const SeeMoreButton = styled.button`
@@ -61,5 +62,10 @@ export const SeeMoreButton = styled.button`
 
   &:hover {
     background-color: #d9691a;
+  }
+
+  @media (max-width: 768px) {
+    bottom: 8px;
+    right: 8px;
   }
 `;

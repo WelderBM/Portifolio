@@ -69,7 +69,9 @@ const ExpandableList: React.FC<ExpandableListProps> = ({
         <>
           {!isExpanded && <Overlay width={containerWidth} />}
           <SeeMoreButton onClick={() => handleExpandClick()}>
-            {isExpanded ? t("seeLessText") : t("seeMoreText")}
+            {isExpanded
+              ? t("education.section.seeLessText")
+              : t("education.section.seeMoreText")}
           </SeeMoreButton>
         </>
       )}

@@ -129,7 +129,9 @@
   "education": {
     "section": {
       "title": "Formação Acadêmica",
-      "subtitle": "Minha base educacional e certificações profissionais"
+      "subtitle": "Minha base educacional e certificações profissionais",
+      "seeLessText": "Ver Menos",
+      "seeMoreText": "Ver Mais"
     },
     "ifrr": {
       "technical": {

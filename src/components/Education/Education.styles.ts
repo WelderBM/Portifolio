@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.section`
-  width: 100%;
+  width: 90%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -13,7 +13,6 @@ export const Container = styled.section`
 
 export const EducationCard = styled.article`
   width: 100%;
-  max-width: 1400px;
   background-color: ${(props) => props.theme.backgroundColor};
   border: 1px solid ${(props) => props.theme.fontColor}40;
   border-radius: 16px;
@@ -28,20 +27,6 @@ export const EducationCard = styled.article`
     transform: translateY(-4px);
     border-color: ${(props) => props.theme.fontColor}80;
     box-shadow: 0 12px 24px ${(props) => props.theme.fontColor}15;
-  }
-
-  @media (max-width: 1024px) {
-    width: 85%;
-    padding: 35px;
-  }
-
-  @media (max-width: 768px) {
-    width: 90%;
-    padding: 25px;
-  }
-
-  @media (max-width: 480px) {
-    padding: 20px;
   }
 `;
 
