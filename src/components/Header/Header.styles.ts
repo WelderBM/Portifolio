@@ -1,8 +1,8 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const Header = styled.header`
   z-index: 20;
-  width: 100%;
+  width: 100vw;
   position: fixed;
   color: ${(props) => props.theme.fontColor};
   background-color: ${(props) => props.theme.backgroundColor};
@@ -13,7 +13,7 @@ export const Header = styled.header`
   transition: background-color 0.3s ease;
 
   &::after {
-    content: '';
+    content: "";
     position: absolute;
     bottom: 0;
     left: 0;
@@ -35,13 +35,13 @@ export const NameLogo = styled.div`
 
   h2 {
     color: ${(props) => props.theme.fontColor};
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
   }
 
   span {
     font-size: 24px;
     font-weight: bold;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     color: #f97c22;
   }
 `;
@@ -56,7 +56,7 @@ export const Nav = styled.nav`
     color: ${(props) => props.theme.fontColor};
     display: flex;
     align-items: center;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     list-style-type: none;
     transition: opacity 0.3s ease, transform 0.3s ease;
     opacity: 0;
@@ -100,36 +100,35 @@ export const Nav = styled.nav`
     padding: 10px 0;
   }
 
-ul li a {
-  position: relative;
-  text-decoration: none;
-  color: ${(props) => props.theme.fontColor};
-  padding: 10px 20px;
-  width: 100%;
-  text-align: center;
-  display: inline-block;
-  overflow: hidden;
-
-  &::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
+  ul li a {
+    position: relative;
+    text-decoration: none;
+    color: ${(props) => props.theme.fontColor};
+    padding: 10px 20px;
     width: 100%;
-    height: 2px;
-    background-color: #f97c22;
-    transform: scaleX(0);
-    transform-origin: right;
-    transition: transform 0.3s ease;
-  }
+    text-align: center;
+    display: inline-block;
+    overflow: hidden;
 
-  &:hover::after {
-    transform: scaleX(1);
-    transform-origin: left;
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background-color: #f97c22;
+      transform: scaleX(0);
+      transform-origin: right;
+      transition: transform 0.3s ease;
+    }
+
+    &:hover::after {
+      transform: scaleX(1);
+      transform-origin: left;
+    }
   }
-}
 `;
-
 
 export const HamburgerIcon = styled.div`
   width: 19px;

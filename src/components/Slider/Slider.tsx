@@ -44,7 +44,7 @@ function SwipeToSlide() {
   const settings = {
     className: "center",
     infinite: true,
-    centerPadding: "60px",
+    centerPadding: "40px",
     slidesToShow: howManyShow,
     swipeToSlide: true,
   };

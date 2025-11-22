@@ -102,6 +102,12 @@ const HeaderComponent: React.FC<HeaderComponentProps> = ({
                 <a href="#projetos">{t("header.projects")}</a>
               </li>
               <li>
+                <a href="#formacao">{t("header.education")}</a>
+              </li>
+              <li>
+                <a href="#experiencia">{t("header.experience")}</a>
+              </li>
+              <li>
                 <a href="#contatos">{t("header.contacts")}</a>
               </li>
             </ul>
