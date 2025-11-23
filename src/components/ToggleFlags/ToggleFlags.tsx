@@ -26,6 +26,7 @@ const ToggleFlags: React.FC<ToggleFlagsProps> = ({
   const changeLanguage = (lng: string) => {
     i18n.changeLanguage(lng);
     handleFlagChange(lng === "pt" ? "BR" : "EN");
+    scrollToTop();
   };
 
   const [isDropdownOpen, setDropdownOpen] = useState(false);
