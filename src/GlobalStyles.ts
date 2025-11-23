@@ -1,20 +1,23 @@
 import { createGlobalStyle } from "styled-components";
 
 interface Props {
-    theme: {
-        body: string;
-    }
+  theme: {
+    body: string;
+    backgroundColor: string;
+    fontColor: string;
+    neutralColor: string;
+  };
 }
 
 export const GlobalStyle = createGlobalStyle<Props>`
     body {
-        background-color: ${props => props.theme.body};
+        background-color: ${(props) => props.theme.body};
         width: 100%;
         height: 100%;
         overflow-y: scroll;
         overflow-x: hidden;
         scrollbar-width: thin;
-        scrollbar-color: #f97c22 ${props => props.theme.body};
+        scrollbar-color: #f97c22 ${(props) => props.theme.body};
     }
 
     &::-webkit-scrollbar {
@@ -22,7 +25,7 @@ export const GlobalStyle = createGlobalStyle<Props>`
     }
 
     &::-webkit-scrollbar-track {
-        background: ${props => props.theme.backgroundColor};
+        background: ${(props) => props.theme.backgroundColor};
         border-radius: 10px;
     }
 

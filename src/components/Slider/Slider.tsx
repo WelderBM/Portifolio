@@ -178,6 +178,7 @@ function SwipeToSlide() {
         }}
         projectName={selectedProject?.title || ""}
       />
+      {/* @ts-expect-error */}
       <Slider {...settings}>
         {projects.map((project, index) => (
           <Card
