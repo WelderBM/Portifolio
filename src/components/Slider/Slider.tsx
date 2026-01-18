@@ -51,6 +51,30 @@ function SwipeToSlide() {
 
   const projects = [
     {
+      imageSrc: "/mix-webapp-preview.png",
+      title: t("projects.mix_webapp.title"),
+      description: t("projects.mix_webapp.description"),
+      buttonNames: ["Next.js", "TypeScript", "Tailwind CSS", "Firebase"],
+      buttonColors: ["#000000", "#3178C6", "#06B6D4", "#FFCA28"],
+      linkDeploy: "https://www.mixnovidades.com/",
+    },
+    {
+      imageSrc: "/portal-descomplicado-preview.png",
+      title: t("projects.portal_descomplicado.title"),
+      description: t("projects.portal_descomplicado.description"),
+      buttonNames: ["Next.js", "TypeScript", "Tailwind CSS", "Supabase"],
+      buttonColors: ["#000000", "#3178C6", "#06B6D4", "#3ECF8E"],
+      linkDeploy: "https://portal-descomplicado.vercel.app/",
+    },
+    {
+      imageSrc: "/rpg-cousins-preview.png",
+      title: t("projects.rpg_cousins.title"),
+      description: t("projects.rpg_cousins.description"),
+      buttonNames: ["Next.js", "TypeScript", "Tailwind CSS", "Firebase"],
+      buttonColors: ["#000000", "#3178C6", "#06B6D4", "#FFCA28"],
+      linkDeploy: "https://rpg-cousins.vercel.app/",
+    },
+    {
       imageSrc: "/barbearia-background.png",
       title: t("projects.barbearia.title"),
       description: t("projects.barbearia.description"),

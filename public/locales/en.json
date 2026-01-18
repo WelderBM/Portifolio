@@ -62,6 +62,18 @@
     "barbearia": {
       "title": "Barbershop Landing Page",
       "description": "A landing page for a barbershop, created to enhance my design and layout skills."
+    },
+    "portal_descomplicado": {
+      "title": "Portal Descomplicado",
+      "description": "A platform that simplifies access to Brazilian public data, such as FIPE and TACO tables, featuring a clean and intuitive interface."
+    },
+    "mix_webapp": {
+      "title": "Mix Webapp",
+      "description": "A full-featured e-commerce developed for a packaging store, including product catalog, order management, and Firebase integration."
+    },
+    "rpg_cousins": {
+      "title": "RPG Cousins",
+      "description": "SaaS for Tormenta 20 RPG players, facilitating character sheet creation, inventory management, and campaign organization."
     }
   },
   "experience": {

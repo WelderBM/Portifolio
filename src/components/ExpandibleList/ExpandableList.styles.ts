@@ -22,6 +22,9 @@ export const Content = styled.div<{
     props.isExpanded
       ? "100%"
       : `${props.maxItemsToShow * props.individualHeight}px`};
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 `;
 
 export const Overlay = styled.div<{ width: number }>`
@@ -36,12 +39,11 @@ export const Overlay = styled.div<{ width: number }>`
 
   background: linear-gradient(
     to top,
-    rgba(255, 255, 255, 0.9) 0%,
-    rgba(255, 255, 255, 0.7) 20%,
-    rgba(255, 255, 255, 0.4) 45%,
-    rgba(255, 255, 255, 0.15) 70%,
-    rgba(255, 255, 255, 0.05) 85%,
-    rgba(255, 255, 255, 0) 100%
+    rgba(31, 31, 31, 0.95) 0%,
+    rgba(31, 31, 31, 0.8) 20%,
+    rgba(31, 31, 31, 0.5) 45%,
+    rgba(31, 31, 31, 0.2) 70%,
+    rgba(31, 31, 31, 0) 100%
   );
 `;
 

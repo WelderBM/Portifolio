@@ -62,6 +62,18 @@
     "barbearia": {
       "title": "Landing Page Barbearia",
       "description": "Uma landing page para uma barbearia, criada para aprimorar minhas habilidades de design e layout."
+    },
+    "portal_descomplicado": {
+      "title": "Portal Descomplicado",
+      "description": "Uma plataforma que simplifica o acesso a dados públicos brasileiros, como as tabelas FIPE e TACO, com uma interface limpa e intuitiva."
+    },
+    "mix_webapp": {
+      "title": "Mix Webapp",
+      "description": "E-commerce completo desenvolvido para uma loja de embalagens, com catálogo de produtos, gerenciamento de pedidos e integração com Firebase."
+    },
+    "rpg_cousins": {
+      "title": "RPG Cousins",
+      "description": "SaaS para jogadores de RPG Tormenta 20, facilitando a criação de fichas, gestão de inventário e organização de campanhas."
     }
   },
   "experience": {
