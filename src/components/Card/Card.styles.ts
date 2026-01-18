@@ -1,7 +1,11 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const CardContainer = styled.div`
-  background: linear-gradient(135deg, ${props => props.theme.body}, ${props => props.theme.backgroundColor}); /* Linear gradient em 135 graus com duas cores */
+  background: linear-gradient(
+    135deg,
+    ${(props) => props.theme.body},
+    ${(props) => props.theme.backgroundColor}
+  ); /* Linear gradient em 135 graus com duas cores */
   border-radius: 20px;
   width: 340px;
   height: 500px;
@@ -14,8 +18,9 @@ export const CardContainer = styled.div`
   cursor: pointer;
 
   /* Sombra contínua estilo Apple */
-  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15), /* Sombra difusa */
-              0 10px 10px rgba(0, 0, 0, 0.07); /* Sombra secundária */
+  box-shadow:
+    0 15px 30px rgba(0, 0, 0, 0.15),
+    /* Sombra difusa */ 0 10px 10px rgba(0, 0, 0, 0.07); /* Sombra secundária */
   transition: transform 0.3s ease; /* Somente transição para a escala */
 
   &:hover {
@@ -26,11 +31,8 @@ export const CardContainer = styled.div`
 export const Image = styled.img`
   width: 100%;
   height: 200px;
+  max-height: 200px;
   object-fit: cover;
-
-  @media (max-width: 768px) {
-    height: auto; /* Ajusta a altura da imagem em telas menores */
-  }
 `;
 
 export const ButtonContainer = styled.div`
@@ -57,7 +59,9 @@ export const Title = styled.h3`
   font-size: 1.6rem;
   margin: 15px 0 10px;
   padding: 10px;
-  transition: color 0.3s, text-shadow 0.3s;
+  transition:
+    color 0.3s,
+    text-shadow 0.3s;
 
   @media (max-width: 768px) {
     font-size: 1.4rem; /* Ajusta o tamanho da fonte em telas menores */
