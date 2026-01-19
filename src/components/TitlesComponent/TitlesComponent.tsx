@@ -11,6 +11,7 @@ const TitlesComponent: React.FC<{ title: string; subtitle: string }> = ({
       data-aos-offset="150"
       data-aos-duration="1000"
       data-aos-easing="ease-out"
+      data-aos-once="true"
     >
       <Title>{title}</Title>
       <Subtitle>{subtitle}</Subtitle>

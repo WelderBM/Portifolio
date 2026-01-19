@@ -35,8 +35,8 @@ const AboutComponent = ({ selectedFlag }: ToggleFlagsProps) => {
           {languages.buttonNames.map((name, index) => (
             <Button
               key={index}
-              backgroundCol={languages.buttonColors[index]}
-              fontCol={languages.fontColors[index]}
+              $backgroundCol={languages.buttonColors[index]}
+              $fontCol={languages.fontColors[index]}
             >
               {name}
             </Button>

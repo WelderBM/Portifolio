@@ -57,17 +57,17 @@ const ExpandableList: React.FC<ExpandableListProps> = ({
   return (
     <Container ref={containerRef}>
       <Content
-        isExpanded={isExpanded}
-        totalItems={totalItems}
-        maxItemsToShow={maxItemsToShow}
-        individualHeight={individualHeight}
+        $isExpanded={isExpanded}
+        $totalItems={totalItems}
+        $maxItemsToShow={maxItemsToShow}
+        $individualHeight={individualHeight}
       >
         {visibleChildren}
       </Content>
 
       {showButton && (
         <>
-          {!isExpanded && <Overlay width={containerWidth} />}
+          {!isExpanded && <Overlay $width={containerWidth} />}
           <SeeMoreButton onClick={() => handleExpandClick()}>
             {isExpanded
               ? t("education.section.seeLessText")

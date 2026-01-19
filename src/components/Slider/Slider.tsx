@@ -3,51 +3,19 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { SliderContainer } from "./Slider.style";
 import { useTranslation } from "react-i18next";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import Card from "../Card/Card";
 import { ModalConfirm } from "../ModalConfirm/ModalConfirm";
 
-function SwipeToSlide() {
+interface SliderProps {
+  onSlideChange?: (image: string) => void;
+}
+
+function SwipeToSlide({ onSlideChange }: SliderProps) {
   const { t } = useTranslation();
-
-  const howManyShowDefault = () => {
-    const cardWidth = 400;
-    const containerWidth = window.innerWidth * 0.95;
-    const possibleCards = Math.floor(containerWidth / cardWidth);
-    return possibleCards;
-  };
-
-  const [howManyShow, setHowManyShow] = useState(() => {
-    if (typeof window !== "undefined") {
-      return howManyShowDefault();
-    }
-    return 3;
-  });
 
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [selectedProject, setSelectedProject] = useState<any>(null);
-
-  useEffect(() => {
-    if (typeof window === "undefined") return;
-
-    const handleResize = () => {
-      setHowManyShow(howManyShowDefault());
-    };
-
-    window.addEventListener("resize", handleResize);
-
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
-
-  const settings = {
-    className: "center",
-    infinite: true,
-    centerPadding: "40px",
-    slidesToShow: howManyShow,
-    swipeToSlide: true,
-  };
 
   const projects = [
     {
@@ -184,12 +152,106 @@ function SwipeToSlide() {
     },
   ];
 
+  useEffect(() => {
+    if (onSlideChange && projects.length > 0) {
+      let slideOffset = 0;
+      if (window.innerWidth > 600) {
+        slideOffset = 2; // Middle of 5 is index 2
+      }
+      const initialIndex = (0 + slideOffset) % projects.length;
+      onSlideChange(projects[initialIndex].imageSrc);
+    }
+  }, [onSlideChange]);
+
+  const settings = {
+    className: "center",
+    centerMode: false,
+    infinite: true,
+    centerPadding: "0px",
+    slidesToShow: 5,
+    swipeToSlide: true,
+    speed: 800,
+    cssEase: "ease-in-out",
+    autoplay: true,
+    autoplaySpeed: 3000,
+    pauseOnHover: true,
+    dots: true,
+    variableWidth: true,
+    beforeChange: (current: number, next: number) => {
+      if (onSlideChange) {
+        let slideOffset = 0;
+        if (window.innerWidth > 600) {
+          slideOffset = 2;
+        }
+        const index = (next + slideOffset) % projects.length;
+        const project = projects[index];
+        if (project) {
+          onSlideChange(project.imageSrc);
+        }
+      }
+    },
+    afterChange: () => {
+      isDragging.current = false;
+    },
+    responsive: [
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          variableWidth: false,
+          centerMode: false,
+        },
+      },
+    ],
+  };
+
+  const mouseDownX = useRef(0);
+  const mouseDownY = useRef(0);
+  const isDragging = useRef(false);
+
+  const handleMouseDownCapture = (e: React.MouseEvent) => {
+    isDragging.current = false;
+    mouseDownX.current = e.clientX;
+    mouseDownY.current = e.clientY;
+  };
+
+  const handleMouseMoveCapture = (e: React.MouseEvent) => {
+    if (isDragging.current) return;
+    if (
+      Math.abs(e.clientX - mouseDownX.current) > 6 ||
+      Math.abs(e.clientY - mouseDownY.current) > 6
+    ) {
+      isDragging.current = true;
+    }
+  };
+
+  const handleTouchStartCapture = (e: React.TouchEvent) => {
+    isDragging.current = false;
+    mouseDownX.current = e.touches[0].clientX;
+    mouseDownY.current = e.touches[0].clientY;
+  };
+
+  const handleTouchMoveCapture = (e: React.TouchEvent) => {
+    if (isDragging.current) return;
+    if (
+      Math.abs(e.touches[0].clientX - mouseDownX.current) > 6 ||
+      Math.abs(e.touches[0].clientY - mouseDownY.current) > 6
+    ) {
+      isDragging.current = true;
+    }
+  };
+
   return (
     <SliderContainer
       data-aos="fade-left"
       data-aos-offset="500"
       data-aos-duration="1000"
       data-aos-easing="ease-out"
+      data-aos-once="true"
+      onMouseDownCapture={handleMouseDownCapture}
+      onMouseMoveCapture={handleMouseMoveCapture}
+      onTouchStartCapture={handleTouchStartCapture}
+      onTouchMoveCapture={handleTouchMoveCapture}
     >
       <ModalConfirm
         isOpen={isModalOpen}
@@ -214,6 +276,9 @@ function SwipeToSlide() {
             buttonColors={project.buttonColors}
             theme={""}
             onClick={() => {
+              if (isDragging.current) {
+                return;
+              }
               setSelectedProject(project);
               setIsModalOpen(true);
             }}

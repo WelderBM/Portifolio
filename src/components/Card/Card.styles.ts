@@ -11,7 +11,7 @@ export const CardContainer = styled.div`
   height: 500px;
   justify-self: center;
   text-align: center;
-  margin: 20px;
+  margin: 20px 10px;
   position: relative;
   z-index: 1;
   overflow: hidden;

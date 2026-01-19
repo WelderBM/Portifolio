@@ -123,44 +123,55 @@ const Education: React.FC = () => {
         subtitle={t("education.section.subtitle")}
       />
       <ExpandableList maxItemsToShow={2}>
-        {educations.map((edu) => (
-          <EducationCard>
+        {educations.map((edu, index) => (
+          <EducationCard key={index}>
             <CardContent>
               <div>
-                {edu.items.map((item, itemIndex) => (
-                  <div key={`${edu.institution}-${itemIndex}`}>
-                    <EducationContainer>
-                      <div>
-                        <EducationTitle>{t(item.titleKey)}</EducationTitle>
-                        <EducationSubtitle>
-                          {t(item.subtitleKey)}
-                        </EducationSubtitle>
-                      </div>
-                      <div style={{ textAlign: "right" }}>
-                        <Period>{t(item.periodKey)}</Period>
-                      </div>
-                    </EducationContainer>
+                {edu.items.map(
+                  (
+                    item: {
+                      titleKey: string | string[];
+                      subtitleKey: string | string[];
+                      periodKey: any | string | string[];
+                      descriptionKey: string | string[];
+                      certificationsKey: any;
+                    },
+                    itemIndex: number,
+                  ) => (
+                    <div key={`${edu.institution}-${itemIndex}`}>
+                      <EducationContainer>
+                        <div>
+                          <EducationTitle>{t(item.titleKey)}</EducationTitle>
+                          <EducationSubtitle>
+                            {t(item.subtitleKey)}
+                          </EducationSubtitle>
+                        </div>
+                        <div style={{ textAlign: "right" }}>
+                          <Period>{t(item.periodKey)}</Period>
+                        </div>
+                      </EducationContainer>
 
-                    <Description>{t(item.descriptionKey)}</Description>
+                      <Description>{t(item.descriptionKey)}</Description>
 
-                    <CertificationsList>
-                      {Array.isArray(
-                        t(item.certificationsKey, { returnObjects: true })
-                      ) &&
-                        (
-                          t(item.certificationsKey, {
-                            returnObjects: true,
-                          }) as string[]
-                        ).map((certification, idx) => (
-                          <CertificationItem key={idx}>
-                            ✓ {certification}
-                          </CertificationItem>
-                        ))}
-                    </CertificationsList>
+                      <CertificationsList>
+                        {Array.isArray(
+                          t(item.certificationsKey, { returnObjects: true }),
+                        ) &&
+                          (
+                            t(item.certificationsKey, {
+                              returnObjects: true,
+                            }) as string[]
+                          ).map((certification, idx) => (
+                            <CertificationItem key={idx}>
+                              ✓ {certification}
+                            </CertificationItem>
+                          ))}
+                      </CertificationsList>
 
-                    {itemIndex < edu.items.length - 1 && <EducationDivider />}
-                  </div>
-                ))}
+                      {itemIndex < edu.items.length - 1 && <EducationDivider />}
+                    </div>
+                  ),
+                )}
               </div>
               <LogoDiv style={{ flex: 0 }}>
                 <CardImage src={edu.image} alt={`${edu.institution} logo`} />

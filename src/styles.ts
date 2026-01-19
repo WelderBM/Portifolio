@@ -25,6 +25,7 @@ export const Background = styled.div`
     opacity: 0.5;
     z-index: 1;
   }
+  overflow-x: hidden;
 `;
 
 export const Content = styled.div`
@@ -72,6 +73,7 @@ export const BackgroundGeometric = styled.div`
     opacity: 0.7;
     z-index: 1;
   }
+  overflow-x: hidden;
 `;
 export const BackgroundBack = styled.div`
   width: 100%;
@@ -97,4 +99,5 @@ export const BackgroundBack = styled.div`
     opacity: 0.7;
     z-index: 1;
   }
+  overflow-x: hidden;
 `;

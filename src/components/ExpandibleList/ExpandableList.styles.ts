@@ -12,22 +12,22 @@ export const Container = styled.div`
 `;
 
 export const Content = styled.div<{
-  isExpanded: boolean;
-  totalItems: number;
-  maxItemsToShow: number;
-  individualHeight: number;
+  $isExpanded: boolean;
+  $totalItems: number;
+  $maxItemsToShow: number;
+  $individualHeight: number;
 }>`
   transition: max-height 0.5s ease-in-out;
   max-height: ${(props) =>
-    props.isExpanded
+    props.$isExpanded
       ? "100%"
-      : `${props.maxItemsToShow * props.individualHeight}px`};
+      : `${props.$maxItemsToShow * props.$individualHeight}px`};
   display: flex;
   flex-direction: column;
   gap: 20px;
 `;
 
-export const Overlay = styled.div<{ width: number }>`
+export const Overlay = styled.div<{ $width: number }>`
   position: absolute;
   bottom: 0;
   left: 0;
