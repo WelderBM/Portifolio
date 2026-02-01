@@ -177,7 +177,7 @@ function SwipeToSlide({ onSlideChange }: SliderProps) {
     pauseOnHover: true,
     dots: true,
     variableWidth: true,
-    beforeChange: (current: number, next: number) => {
+    beforeChange: (_current: number, next: number) => {
       if (onSlideChange) {
         let slideOffset = 0;
         if (window.innerWidth > 600) {

@@ -1,6 +1,5 @@
 import {
   About,
-  Image,
   Content,
   Title,
   Description,
@@ -25,7 +24,15 @@ const AboutComponent = ({ selectedFlag }: ToggleFlagsProps) => {
 
   return (
     <About>
-      <div className="badge-base LI-profile-badge" data-locale="pt_BR" data-size="large" data-theme="dark" data-type="HORIZONTAL" data-vanity="welder-barroso-37b654207" data-version="v1"></div> 
+      <div
+        className="badge-base LI-profile-badge"
+        data-locale="pt_BR"
+        data-size="large"
+        data-theme="dark"
+        data-type="HORIZONTAL"
+        data-vanity="welder-barroso-37b654207"
+        data-version="v1"
+      ></div>
       <Content>
         <Title>{t("about.title")}</Title>
         <Description>{t("about.description_1")}</Description>
