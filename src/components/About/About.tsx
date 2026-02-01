@@ -7,7 +7,6 @@ import {
   SecondTitle,
   Button,
 } from "./About.styles";
-import programmer from "/programmer.webp";
 import ButtonLink from "../DownloadCv/DownloadCv";
 import { useTranslation } from "react-i18next";
 
@@ -26,7 +25,7 @@ const AboutComponent = ({ selectedFlag }: ToggleFlagsProps) => {
 
   return (
     <About>
-      <Image src={programmer} alt={t("about.image_alt")} loading="lazy" />
+      <div className="badge-base LI-profile-badge" data-locale="pt_BR" data-size="large" data-theme="dark" data-type="HORIZONTAL" data-vanity="welder-barroso-37b654207" data-version="v1"></div> 
       <Content>
         <Title>{t("about.title")}</Title>
         <Description>{t("about.description_1")}</Description>
